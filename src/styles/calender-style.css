@@ -1,0 +1,145 @@
+/*IMPORTED STYLES*/
+@import "root-colors.css";
+@import "style.css";
+/*IMPORTED STYLES*/
+
+* {
+	font-family: "noto", sans-serif;
+}
+
+.calendar-header {
+	color: var(--Tlight-veryDarkGreen);
+}
+
+.selected-date-type button {
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+
+.months {
+	overflow-y: auto;
+	height: 30vh;
+	/*border-radius: 0 16px 18px 0;*/
+	list-style-type: none;
+	transform: translate(-5%, 35%) !important;
+}
+
+.search-year-box {
+	width: 160% !important;
+	transform: translate(20%, 120%) !important;
+}
+
+.other-date-type {
+	color: var(--Tlight-middle-black);
+}
+
+.calender-weekdays {
+	color: var(--Tlight-middle-black);
+}
+
+.disable-days {
+	color: var(--Tlight-light-black) !important;
+	border: none;
+}
+
+.day {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.3rem 0;
+	border: none;
+	border-radius: 10px;
+}
+
+.date-font {
+	font-size: large;
+}
+
+@media screen and (max-width: 576px) {
+	.date-font {
+		font-size: 14px !important;
+	}
+}
+
+.other-date-font {
+	font-size: 15px;
+	color: var(--Tlight-middle-black);
+}
+
+@media screen and (max-width: 576px) {
+	.other-date-font {
+		font-size: 11px !important;
+	}
+}
+
+.btn-today {
+	border: none !important;
+	background: var(--Tlight-lightRedBrown);
+	border-radius: 10px !important;
+}
+
+.btn-today:hover {
+	box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.20);
+	background: var(--Tlight-lightRedBrown);
+}
+
+.btn-today:active {
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.30) !important;
+	background: var(--Tlight-lightRedBrown) !important;
+}
+
+.today,
+.today:hover,
+.today:focus,
+.today:active,
+.today:focus-within {
+	border: var(--Tlight-lightBrown) 1px solid !important;
+}
+
+.auspicious-day,
+.auspicious-day:hover,
+.auspicious-day:focus,
+.auspicious-day:active,
+.auspicious-day:focus-within {
+	border: var(--Tlight-middle-black) 1px solid !important;
+}
+
+.holiday,
+.holiday:hover,
+.holiday:focus,
+.holiday:active,
+.holiday:focus-within,
+.holiday .other-date-font {
+	color: var(--Tlight-deepRed) !important;
+}
+
+.event-holiday {
+	color: var(--Tlight-deepRed);
+}
+
+/*MODALS STYLE*/
+.modal-dialog {
+	height: 40vh;
+}
+
+.modal-content {
+	background: var(--Tlight-green);
+	height: 24.125rem;
+	width: 20rem;
+}
+
+.modal-content .modal-header, .modal-footer {
+	border: none;
+}
+
+.modal-dialog .modal-header .modal-title {
+	padding: .5rem 0 1rem 0;
+	border-bottom: var(--Tlight-light-black) 1px solid;
+}
+
+
+.actions-calender {
+	list-style-type: decimal-leading-one;
+	padding-left: 0;
+}
+/*MODALS STYLE*/

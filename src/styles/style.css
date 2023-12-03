@@ -1,0 +1,458 @@
+/*IMPORTED STYLES*/
+/*ROOT COLOR*/
+@import "root-colors.css";
+/*ROOT COLOR*/
+/*IMPORTED STYLES*/
+
+/*FONT FAMILY*/
+@font-face {
+	font-family: "noto";
+	src: url(../fonts/NotoSansArabic-Regular.woff2) format("woff2");
+}
+
+/*FONT FAMILY*/
+
+* {
+	box-sizing: border-box;
+	font-family: noto, sans-serif;
+}
+
+
+/*header*/
+
+.z-in-nav {
+	z-index: 1450;
+}
+
+.z-in-nav-offcanvas {
+	z-index: 1400;
+}
+
+.z-1000 {
+	z-index: 1000 !important;
+}
+
+.offcanvas.offcanvas-bars {
+	padding-top: 5rem;
+}
+
+.offcanvas.offcanvasPallete{
+	padding-top: 5rem;
+	right: unset;
+	left: 0;
+}
+
+.btn-close-offcanvas {
+	transition: 0.5s;
+}
+
+.close-offcanvas-header {
+	transition: 0.5s;
+	transform: rotate(270deg);
+}
+
+.bg-header {
+	background: var(--Tlight-lightGreen);
+	box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+}
+
+.width-element-header {
+	width: 50px;
+}
+
+.btn-change-theme {
+	width: 80px;
+	background: var(--Tlight-brown);
+	color: var(--Tlight-whight);
+}
+
+.btn-change-theme:active,
+.btn-change-theme:hover,
+.btn-change-theme:focus-within,
+.btn-change-theme:focus {
+	background: var(--Tlight-brown) !important;
+	color: var(--Tlight-whight) !important;
+}
+
+/*DROPDOWN IN HEADER*/
+.dropdown-menu-header.dropdown-menu .dropdown-item:active,
+.dropdown-menu-header.dropdown-menu .dropdown-item:hover,
+.dropdown-menu-header.dropdown-menu .dropdown-item:focus-within {
+	background: var(--Tlight-brown);
+	color: var(--Tlight-black);
+}
+
+.dropdown-menu-header.dropdown-menu.show {
+	display: flex;
+	gap: .3rem;
+	background: none;
+	border: none;
+}
+
+.dropdown-menu-header.dropdown-menu[data-bs-popper] {
+	top: 100%;
+	right: auto;
+	margin-top: var(--bs-dropdown-spacer);
+}
+
+/*DROPDOWN IN HEADER*/
+
+.bg-photo {
+	background: url("../images/imam-hossein.jpg");
+	background-size: cover;
+}
+
+.bg-light-green {
+	background-color: var(--Tlight-green);
+}
+
+.bg-very-light-green {
+	background: var(--Tlight-lightGreen);
+}
+
+/*header*/
+
+
+/*TABS STYLE*/
+.bg-tabs {
+	background: var(--Tlight-lightGreen) !important;
+	transition: background-color .3s;
+}
+
+.text-color-tabs {
+	color: var(--Tlight-darkGreen) !important;
+	transition: color .3s;
+}
+
+ul.nav li.nav-item .active {
+	background: var(--Tlight-darkGreen) !important;
+	color: var(--Tlight-lightGreen) !important;
+	box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+/*TABS STYLE*/
+
+/*OFFCANVAS*/
+
+/**/
+.nav-item {
+	cursor: pointer;
+}
+
+/**/
+
+/*ofcanvas tabs accordion*/
+
+.accordion-item:nth-child(odd) {
+	--bs-accordion-bg: var(--Tlight-green); /*COLOR OF BOX WHEN ACCORDION IS OPEN*/
+	--bs-accordion-active-bg: var(--Tlight-AccordionGreen1); /*COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS OPEN*/
+	--bs-accordion-btn-bg: var(--Tlight-AccordionGreen1); /*THE COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS CLOSED*/
+	border: none;
+}
+
+.accordion-item:nth-child(even) {
+	--bs-accordion-bg: var(--Tlight-green); /*COLOR OF BOX WHEN ACCORDION IS OPEN*/
+	--bs-accordion-active-bg: var(--Tlight-AccordionGreen2); /*COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS OPEN*/
+	--bs-accordion-btn-bg: var(--Tlight-AccordionGreen2); /*THE COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS CLOSED*/
+	border: none;
+}
+
+/*.accordion-item:nth-child(odd) .accordion-button {*/
+/*    padding-top: 5px;*/
+/*    padding-bottom: 5px;*/
+/*    border: none;*/
+/*}*/
+
+/*.accordion-item:nth-child(even) .accordion-button {*/
+/*    padding-top: 5px;*/
+/*    padding-bottom: 5px;*/
+/*    border: none;*/
+/*}*/
+
+.accordion-item:nth-child(odd) .accordion-item {
+	--bs-accordion-bg: transparent; /*COLOR OF BOX WHEN ACCORDION IS OPEN*/
+	--bs-accordion-active-bg: transparent; /*COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS OPEN*/
+	--bs-accordion-btn-bg: transparent; /*THE COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS CLOSED*/
+	border: none;
+}
+
+.accordion-item:nth-child(even) .accordion-item {
+	--bs-accordion-bg: transparent; /*COLOR OF BOX WHEN ACCORDION IS OPEN*/
+	--bs-accordion-active-bg: transparent; /*COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS OPEN*/
+	--bs-accordion-btn-bg: transparent; /*THE COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS CLOSED*/
+	border: none;
+}
+
+.accordion-body > * {
+	/*padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);*/
+	/*border-bottom: 1px solid grey;*/
+	border-radius: 0;
+}
+
+.accordion-body .accordion-item > * {
+	/*padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);*/
+	/*border-bottom: 1px solid grey;*/
+	border-radius: 0;
+}
+
+.accordion-body .accordion-item .accordion-body-links > * {
+	/*padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);*/
+	/*border-bottom: 1px solid grey;*/
+	border-radius: 0;
+}
+
+.accordion-body > *:last-child {
+	/*padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);*/
+	border-bottom: none;
+	border-radius: 0;
+}
+
+.accordion-body .accordion-item > *:last-child {
+	/*padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);*/
+	border-bottom: 1px none;
+	border-radius: 0;
+}
+
+.accordion-body .accordion-item .accordion-body-links > *:last-child {
+	/*padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);*/
+	border-bottom: 1px none;
+	border-radius: 0;
+}
+
+.accordion-body-links {
+	padding: 0 2.8rem;
+}
+
+/*CHANGE STYLE OF COLLAPSED BUTTON IN ACCORDION*/
+.accordion-button::after {
+	flex-shrink: 0;
+	width: var(--bs-accordion-btn-icon-width);
+	height: var(--bs-accordion-btn-icon-width);
+	content: "";
+	background-image: var(--bs-accordion-btn-icon);
+	background-repeat: no-repeat;
+	background-size: var(--bs-accordion-btn-icon-width);
+	transition: var(--bs-accordion-btn-icon-transition);
+	margin: 0;
+	transform: rotate(90deg);
+	color: black;
+}
+
+/*CHANGE STYLE OF COLLAPSED BUTTON IN ACCORDION WHEN ACCORDION IS OPEN*/
+.accordion-button:not(.collapsed)::after {
+	background-image: var(--bs-accordion-btn-icon);
+	transform: rotate(180deg);
+}
+
+.accordion-button:focus {
+	z-index: 3;
+	border-color: transparent !important;
+	outline: 0;
+	box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+	color: var(--bs-accordion-active-color);
+	background-color: var(--bs-accordion-active-bg);
+	box-shadow: none;
+}
+
+/*STYLING ACCORDION BUTTONS WHEN FOCUSED*/
+
+
+/*ofcanvas tabs accordion*/
+
+/*OFFCANVAS PROFILE*/
+
+.Profile .dropup .dropdown-menu li a .active-dropdown:active {
+	background: var(--Tlight-darkGreen) !important;
+	color: var(--Tlight-lightGreen) !important;
+	box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+/*OFFCANVAS PROFILE*/
+
+
+/*body*/
+/*calender*/
+
+
+.calendar-box-width {
+	width: 78%;
+}
+
+.calendar-box-color {
+	background: rgb(12, 31, 52, 0.65);
+}
+
+.calendar-home-page {
+	position: relative;
+}
+
+/*FILTER BOX*/
+.filter-box {
+	display: none;
+}
+
+.bg-filter-box {
+	background: var(--Tlight-lightGreen);
+}
+
+.filter-text-color {
+	color: var(--Tlight-darkGreen);
+}
+
+.form-check-input[type=checkbox] {
+	border-radius: 0.35em;
+}
+
+.form-check-input {
+	accent-color: transparent;
+	background-color: var(--Tlight-whight);
+	border: 2px solid var(--Tlight-darkGreen);
+}
+
+.form-check-input:focus {
+	border-color: var(--Tlight-darkGreen);
+	outline: 0;
+	box-shadow: none;
+	accent-color: black;
+}
+
+.form-check-input:checked {
+	background-color: var(--Tlight-middle-black);
+	border: 2px solid var(--Tlight-veryDarkGreen);
+}
+/*FILTER BOX*/
+
+@media screen and (min-width: 768px) {
+	.calendar-box-width {
+		width: 40%;
+	}
+}
+
+.message-box-width {
+	width: 80%;
+}
+
+.message-box-color {
+	background: var(--Tlight-darkGreen);
+}
+
+@media screen and (min-width: 768px) {
+	.message-box-width {
+		width: 45%;
+	}
+}
+
+.actions {
+	list-style-type: decimal-leading-one;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.actions li::marker {
+	color: var(--Tlight-brown);
+}
+
+.text-color-prayers {
+	color: var(--Tlight-darkGold)
+}
+
+.bg-actions {
+	background: var(--Tlight-lightGreen);
+}
+
+.hover-none:hover {
+	color: var(--Tlight-black);
+}
+
+.form-box form {
+	box-shadow: 0 0 10px var(--Tlight-light-black);
+	border-radius: 16px;
+}
+
+.form-box form * *:focus, .form-box form * *:active, .form-box form * *:focus-within {
+	background: var(--bs-form-control-bg) !important;
+	box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color) !important;
+}
+
+.btn.bg-very-light-green:focus,
+.btn.bg-very-light-green:active,
+.btn.bg-very-light-green:focus-within,
+.btn.bg-very-light-green:hover {
+	background-color: var(--bs-form-control-bg) !important;
+}
+
+.last-seen-things {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.last-search-things {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.hover-boutton-search-box {
+	background: var(--Tlight-lightGreen);
+	border: none;
+	box-shadow: none;
+}
+
+.text-profile-color {
+	color: var(--Tlight-darkGreen);
+}
+
+.border-start-1 {
+	border-right: 0.5px solid var(--Tlight-black);
+}
+
+.border-top-1 {
+	border-top: 0.5px solid var(--Tlight-black);
+}
+
+.bg-footer {
+	background: var(--Tlight-veryDarkGreen);
+}
+
+.text-color-footer {
+	color: var(--Tlight-green);
+}
+
+.text-color-copyright {
+	color: var(--Tlight-darkBlueFooter);
+}
+
+.text-brown {
+	color: var(--Tlight-brown);
+}
+
+/*SCROLLBAR STYLE*/
+*::-webkit-scrollbar {
+	width: 0.2rem;
+	background-color: var(--Tlight-light-black);
+}
+
+*::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
+	background-color: var(--Tlight-deep-black);
+	border-radius: 4px;
+}
+
+/*SCROLLBAR STYLE*/
+
+/*SHADOWS*/
+.shadow-regular {
+	box-shadow: 0 0 10px var(--Tlight-light-black);
+}
+
+.shadow-light {
+	box-shadow: 0 0 10px var(--Tlight-light-black);
+}
+
+.shadow-very-light {
+	box-shadow: 0 0 10px var(--Tlight-very-light-black);
+}
+/*SHADOWS*/

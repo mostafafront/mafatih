@@ -1,0 +1,22 @@
+:root {
+    --Tlight-lightGreen: #E2F0F1;
+    --Tlight-green: #B8DBD9;
+    --Tlight-darkGreen: #1C6981;
+    --Tlight-veryDarkGreen: #0C1F34;
+    --Tlight-darkBlueOpacity: rgb(12, 31, 52, 0.65);
+    --Tlight-darkBlueFooter: #043353;
+    --Tlight-AccordionGreen1: #c4e7e4;
+    --Tlight-AccordionGreen2: #cfecea;
+    --Tlight-middle-black: rgba(0, 0, 0, 0.50);
+    --Tlight-light-black: rgba(0, 0, 0, 0.3);
+    --Tlight-very-light-black: rgba(0, 0, 0, 0.15);
+    --Tlight-lightRedBrown: #D5BB9D;
+    --Tlight-lightBrown: #B9966D ;
+    --Tlight-deepRed: #c20000b8;
+    --Tlight-brown: #B4924D;
+    --Tlight-black: #000;
+    --Tlight-deep-black: rgba(0, 0, 0, 0.80);
+    --Tlight-gold: #CCA75C;
+    --Tlight-darkGold: #847048;
+    --Tlight-whight: #fff;
+}

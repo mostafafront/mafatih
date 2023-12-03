@@ -1,0 +1,140 @@
+@import "root-colors.css";
+@import "style.css";
+@import "kfg-font.css";
+
+.content .prayer {
+	font-family: KFG;
+}
+
+.content .text {
+	font-family: "noto", sans-serif;
+	font-size: 1.4rem;
+}
+
+.content .quran {
+	color: var(--Tlight-veryDarkGreen);
+}
+
+.footer-z {
+	z-index: 1050;
+}
+
+.z-in-footer-offcanvas {
+	z-index: 1045;
+}
+
+.footer .themes > {
+	color: var(--Tlight-veryDarkGreen);
+	text-align: justify;
+	font-family: noto, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.footer .singer button {
+	color: var(--Tlight-veryDarkGreen);
+	text-align: center;
+	font-family: noto, sans-serif;
+	font-size: 12px !important;
+	font-style: normal;
+	white-space: nowrap;
+}
+
+/*PRAYER STYLES*/
+.prayer {
+	color: var(--Tlight-veryDarkGreen);
+	text-align: justify;
+	font-family: KFGQPC Uthman Taha Naskh;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+}
+
+
+.footer-buttons-select {
+	border-radius: 0.25rem;
+	border: 1px lightgray solid !important;
+	box-shadow: 0 0 1rem lightgray;
+}
+
+.tab-footer-setting {
+	color: var(--Tlight-black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 38px !important;
+	height: 38px;
+}
+
+.change-font-size {
+	height: 40vh;
+}
+
+.text-to-change-font-size {
+	width: 50%;
+	height: 20vh;
+	border-radius: 0.8rem;
+	font-size: 32px;
+}
+
+.nav-tab-setting-width {
+	width: 33.3%;
+	display: flex;
+	justify-content: center;
+}
+
+/*#nav-tabContent {*/
+/*	height: 55vh;*/
+/*}*/
+
+/*.tab-pane.show.active {*/
+/*	height: inherit;*/
+/*}*/
+
+.tab-pane > * {
+	height: 55vh;
+	overflow-y: auto;
+	padding-bottom: 20px;
+	margin: 0 0 2rem 0;
+}
+
+.font-family-box {
+	padding: 0.4rem;
+	border-radius: 8px;
+}
+
+.font-family-box-active {
+	border: 4px solid var(--Tlight-brown);
+}
+
+.speed-box {
+	border-radius: 15px;
+	width: 100%;
+}
+
+.form-range::-webkit-slider-thumb {
+	background: var(--Tlight-brown);
+}
+
+.form-range::-moz-range-thumb {
+	background: var(--Tlight-brown);
+}
+
+.form-range::-ms-thumb {
+	background: var(--Tlight-brown);
+}
+
+.singer-box {
+	border-radius: 12px;
+}
+
+.singer-box-active {
+	outline: 4px solid var(--Tlight-brown);
+}
+
+.img-singer {
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+}

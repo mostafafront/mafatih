@@ -1,0 +1,112 @@
+@import "root-colors.css";
+@import "style.css";
+@import "kfg-font.css";
+
+.bg-very-light-green {
+	background: var(--Tlight-lightGreen);
+}
+
+.donate-section {
+	border-radius: 15px;
+}
+
+#donate-range {
+	width: 100%;
+	direction: ltr;
+}
+
+.progress {
+	border-radius: 10px;
+	height: 20px;
+	direction: ltr;
+	background: var(--Tlight-light-black);
+}
+
+.progress-bar {
+	background: var(--Tlight-brown);
+}
+
+.nav-pills .nav-item-choose-donate-model {
+	/*width: 100px;*/
+	white-space: nowrap;
+	/*font-size: 12px;*/
+}
+
+.nav-pills .nav-item-choose-donate-model .nav-link {
+	background: transparent;
+	box-shadow: none;
+	color: var(--Tlight-black);
+}
+
+.nav-pills .nav-item-choose-donate-model .nav-link.active {
+	background: var(--Tlight-gold) !important;
+	box-shadow: none;
+	border: none;
+	border-radius: 12px;
+}
+
+.box-price-btns .price-btn {
+	width: 125px;
+}
+
+.box-price-btns .price-btn button.btn {
+	background: var(--Tlight-green);
+	border: none;
+	color: var(--Tlight-black);
+}
+
+.box-price-btns .price-btn button.active {
+	background: var(--Tlight-gold) !important;
+	border: none;
+	color: var(--Tlight-whight);
+}
+
+.btn-submit-donate {
+	background: var(--Tlight-brown);
+	color: var(--Tlight-whight);
+}
+
+.btn-submit-donate:hover,
+.btn-submit-donate:active,
+.btn-submit-donate:focus,
+.btn-submit-donate:focus-within {
+	background: var(--Tlight-brown) !important;
+	color: var(--Tlight-whight) !important;
+}
+
+.terms-content {
+	box-shadow: 0 0 10px var(--Tlight-very-light-black);
+}
+
+.choose-type-of-money form .input-type-of-money {
+	border-radius: 0 12px 12px 0;
+}
+
+.choose-type-of-money form .button-choose-type-of-money {
+	border-radius: 12px 0 0 12px;
+	height: 56px;
+}
+
+.choose-type-of-money form input:focus, .choose-type-of-money  form input:active, .choose-type-of-money  form input:focus-within {
+	background: var(--Tlight-green);
+	box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color) !important;
+}
+
+.types-of-money-box {
+	box-shadow: 0 0 10px var(--Tlight-light-black);
+	width: 100%;
+	top: 55px;
+}
+
+.content-of-types-of-money {
+	overflow-y: auto;
+	height: 180px;
+}
+
+.type-of-money {
+	border-bottom: 1px solid var(--Tlight-very-light-black);
+}
+
+.type-of-money .shortcut-money {
+	border-right: 1px solid var(--Tlight-very-light-black);
+}
