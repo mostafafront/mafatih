@@ -92,7 +92,7 @@
 /*	height: inherit;*/
 /*}*/
 
-.tab-pane > * {
+.tab-pane-reader > * {   /* changed */
 	height: 55vh;
 	overflow-y: auto;
 	padding-bottom: 20px;
