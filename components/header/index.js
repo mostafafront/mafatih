@@ -1,5 +1,6 @@
 import React from 'react'
 import BtnMenu from './btnMenu'
+import BtnPallete from './btnPallete'
 
 export default function HeaderC() {
   return (
@@ -27,9 +28,9 @@ export default function HeaderC() {
 								</ul>
 							</div>
 							<div className="pallete-offcanvas-btn">
-								<button className="btn p-0 border-0" id="offcanvas-pallete-close" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPallete" aria-controls="offcanvasPallete">
-									<i className="fa-regular fa-palette fa-xl"></i>
-								</button>
+								
+								<BtnPallete/>
+
 							</div>
 						</div>
 					</div>
