@@ -1,4 +1,5 @@
 import React from 'react'
+import BtnMenu from './btnMenu'
 
 export default function HeaderC() {
   return (
@@ -38,14 +39,9 @@ export default function HeaderC() {
 						</a>
 					</div>
 					<div className="navbar-toggle width-element-header d-flex justify-content-end">
-						<button id="bars-close"
-								className="btn p-0 border-0"
-								type="button"
-								data-bs-toggle="offcanvas"
-								data-bs-target="#staticBackdrop"
-								aria-controls="staticBackdrop">
-							<i className="fa-solid fa-bars fa-xl"></i>
-						</button>
+						
+						<BtnMenu/>
+
 					</div>
 				</div>
 			</nav>
