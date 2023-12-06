@@ -188,7 +188,7 @@ export default function Home() {
 						</li>
 					</ul>
 					<div className="button-for-actions align-self-center pt-3">
-						<button type="button" className="btn bg-white shadow rounded-pill fs-6 d-flex gap-2">
+						<button type="button" className="btn bg-white shadow rounded-pill fs-6 d-flex justify-content-center align-items-center gap-2">
 							<span className="opacity-50">اقراء المزید...</span>
 							<i className="fa-regular fa-circle-plus fa-xl"></i>
 						</button>
@@ -227,7 +227,7 @@ export default function Home() {
 								</li>
 							</ul>
 						</div>
-						<div className="last-search w-50 border-start-1 pe-3">
+						<div className="last-search w-50 border-start-1 ps-3">
 							<div className="last-search-head">
 								<h3 className="text-profile-color">آخر بحث</h3>
 							</div>
