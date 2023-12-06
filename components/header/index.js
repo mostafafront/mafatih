@@ -54,7 +54,7 @@ export default function HeaderC() {
 		<div className="offcanvas offcanvas-start offcanvas-bars bg-light-green z-in-nav-offcanvas"
 			 dir="rtl"
 			 data-bs-backdrop="true"
-			 tabindex="-1"
+			 tabIndex="-1"
 			 id="staticBackdrop"
 			 aria-labelledby="staticBackdropLabel">
 			<div className="offcanvas-body">
@@ -62,7 +62,7 @@ export default function HeaderC() {
 					
 					{/* <!--SEARCH BOX--> */}
 					<div className="form-box pb-2">
-						<form action="" enctype="multipart/form-data">
+						<form action="" encType="multipart/form-data">
 							<div className="d-flex rounded-pill">
 								<div className="d-flex rounded-pill w-100">
 									
@@ -84,31 +84,31 @@ export default function HeaderC() {
 								 className="filter-box filter-box-offcanvas flex-column bg-filter-box rounded-4 p-2 position-absolute top-0 w-100 z-3 mt-4">
 								<div className="filter-checks py-1 ps-1 form-check m-0">
 									<input className="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check-offcanvas1"/>
-									<label className="form-check-label filter-text-color" for="filter-check-offcanvas1">
+									<label className="form-check-label filter-text-color" htmlFor="filter-check-offcanvas1">
 										البحث في جمیع المواضیع
 									</label>
 								</div>
 								<div className="filter-checks py-1 ps-1 form-check m-0">
 									<input className="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check-offcanvas2"/>
-									<label className="form-check-label filter-text-color" for="filter-check-offcanvas2">
+									<label className="form-check-label filter-text-color" htmlFor="filter-check-offcanvas2">
 										البحث في الزیاراة
 									</label>
 								</div>
 								<div className="filter-checks py-1 ps-1 form-check m-0">
 									<input className="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check-offcannvas3"/>
-									<label className="form-check-label filter-text-color" for="filter-check-offcannvas3">
+									<label className="form-check-label filter-text-color" htmlFor="filter-check-offcannvas3">
 										البحث في الأدعیة
 									</label>
 								</div>
 								<div className="filter-checks py-1 ps-1 form-check m-0">
 									<input className="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check-offcannvas4"/>
-									<label className="form-check-label filter-text-color" for="filter-check-offcannvas4">
+									<label className="form-check-label filter-text-color" htmlFor="filter-check-offcannvas4">
 										البحث في الآعمال
 									</label>
 								</div>
 								<div className="filter-checks py-1 ps-1 form-check m-0">
 									<input className="form-check-input me-2 ms-0" type="checkbox" value="" id="filter-check-offcannvas5"/>
-									<label className="form-check-label filter-text-color" for="filter-check-offcannvas5">
+									<label className="form-check-label filter-text-color" htmlFor="filter-check-offcannvas5">
 										البحث في النص
 									</label>
 								</div>
@@ -149,7 +149,7 @@ export default function HeaderC() {
 							 id="pills-home"
 							 role="tabpanel"
 							 aria-labelledby="pills-home-tab"
-							 tabindex="0">
+							 tabIndex="0">
 							<div className="accordion" id="accordionFlushExample-1">
 								<div className="accordion-item">
 									<h2 className="accordion-header">
@@ -305,7 +305,7 @@ export default function HeaderC() {
 							 id="pills-profile"
 							 role="tabpanel"
 							 aria-labelledby="pills-profile-tab"
-							 tabindex="0">
+							 tabIndex="0">
 							<div className="accordion" id="accordionFlushExample-2">
 								<div className="accordion-item">
 									<h2 className="accordion-header">
@@ -409,7 +409,7 @@ export default function HeaderC() {
 		<div className="offcanvas offcanvas-end offcanvasPallete bg-light-green z-in-nav-offcanvas"
 			 dir="rtl"
 			 data-bs-backdrop="true"
-			 tabindex="-1"
+			 tabIndex="-1"
 			 id="offcanvasPallete"
 			 aria-labelledby="offcanvasPalleteLabel">
 			<div className="offcanvas-body d-flex flex-column justify-content-evenly align-items-center gap-3">
