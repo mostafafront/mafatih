@@ -10,7 +10,7 @@ export default function FooterC() {
 				{/* <!--rafed saghafiye --> */}
 				<div className="rafed-saghafiye align-self-center">
 					<a href="#">
-						<img src="./static/assets/images/footer-preyer.svg" alt="rafed saghafiye" width="100%"/>
+						<img src="/images/footer-preyer.svg" alt="rafed saghafiye" width="100%"/>
 					</a>
 				</div>
 				{/* <!--rafed saghafiye --> */}
@@ -19,27 +19,27 @@ export default function FooterC() {
 				<div className="social d-flex justify-content-between w-75 m-auto pt-4">
 					<div className="skype">
 						<a href="#">
-							<img src="static/assets/images/skyp.svg" alt="skype loge"/>
+							<img src="/images/skyp.svg" alt="skype loge"/>
 						</a>
 					</div>
 					<div className="twitter">
 						<a href="#">
-							<img src="static/assets/images/twitte.svg" alt="skype loge"/>
+							<img src="/images/twitte.svg" alt="skype loge"/>
 						</a>
 					</div>
 					<div className="whatsapp">
 						<a href="#">
-							<img src="static/assets/images/whatsUp.svg" alt="skype loge"/>
+							<img src="/images/whatsUp.svg" alt="skype loge"/>
 						</a>
 					</div>
 					<div className="facebook">
 						<a href="#">
-							<img src="static/assets/images/facebook.svg" alt="skype loge"/>
+							<img src="/images/facebook.svg" alt="skype loge"/>
 						</a>
 					</div>
 					<div className="instagram">
 						<a href="#">
-							<img src="static/assets/images/instgram.svg" alt="skype loge"/>
+							<img src="/images/instgram.svg" alt="skype loge"/>
 						</a>
 					</div>
 				</div>
