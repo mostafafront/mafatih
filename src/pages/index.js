@@ -4,6 +4,7 @@ import HeaderC from "../../components/header";
 
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css'; //میتونه نباشه
+import FilterInput from "../../components/index/filterInput";
 
 
 export default function Home() {
@@ -61,8 +62,9 @@ export default function Home() {
 					<div className="form-box py-3">
 						<form action="" encType="multipart/form-data">
 							<div className="form-items d-flex rounded-pill bg-very-light-green">
-								<button type="button" className="filter-icon-2 btn p-2 rounded-0 rounded-start-5">
-									<i className="fa-regular fa-sliders"></i></button>
+								
+                <FilterInput/>
+
 								<input type="text"
 									   name="name"
 									   className="form-control border-0 rounded-0 bg-very-light-green"
