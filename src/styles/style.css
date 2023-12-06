@@ -7,7 +7,7 @@
 /*FONT FAMILY*/
 @font-face {
 	font-family: "noto";
-	src: url(../fonts/NotoSansArabic-Regular.woff2) format("woff2");
+	src: url(../../public/fonts/NotoSansArabic-Regular.woff2) format("woff2");
 }
 
 /*FONT FAMILY*/
@@ -98,7 +98,7 @@
 /*DROPDOWN IN HEADER*/
 
 .bg-photo {
-	background: url("../images/imam-hossein.jpg");
+	background: url("../../public/images/imam-hossein.jpg");
 	background-size: cover;
 }
 
