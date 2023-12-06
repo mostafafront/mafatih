@@ -1,6 +1,7 @@
 import React from 'react'
 import BtnMenu from './btnMenu'
 import BtnPallete from './btnPallete'
+import FilterOffcanvas from './filterOffcanvas'
 
 export default function HeaderC() {
   return (
@@ -64,8 +65,9 @@ export default function HeaderC() {
 						<form action="" enctype="multipart/form-data">
 							<div className="d-flex rounded-pill">
 								<div className="d-flex rounded-pill w-100">
-									<button type="button" className="filter-icon-1 btn p-2 rounded-0 rounded-start-5 bg-very-light-green"><i
-											className="fa-regular fa-sliders"></i></button>
+									
+									<FilterOffcanvas/>
+
 									<input type="text"
 										   name="name"
 										   className="input-search form-control border-0 rounded-0 bg-very-light-green"
