@@ -1,5 +1,10 @@
+import React from "react";
 import FooterC from "../../components/footer";
 import HeaderC from "../../components/header";
+
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css'; //میتونه نباشه
+
 
 export default function Home() {
   return (
