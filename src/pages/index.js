@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import FooterC from "../../components/footer";
 import HeaderC from "../../components/header";
 
@@ -7,6 +7,50 @@ import 'owl.carousel/dist/assets/owl.theme.default.css'; //میتونه نباش
 
 
 export default function Home() {
+
+
+  useEffect(() => {
+    require('jquery/dist/jquery')
+    require('owl.carousel/dist/owl.carousel')
+  },[])
+  
+  useEffect(() => {
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        rtl: true,
+        loop: true,
+        dots: false,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          275: {
+            items: 1
+          },
+          320: {
+            items: 2.4
+          },
+          375: {
+            items: 2.5
+          },
+          425: {
+            items: 2.7
+          },
+          768: {
+            items: 3.5
+          },
+          1024: {
+            items: 4.5
+          },
+          1440: {
+            items: 5.5
+          }
+          
+        }
+      });
+    });
+  },[])
+
+
   return (
     <>
     <HeaderC/>
