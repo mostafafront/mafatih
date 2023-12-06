@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderC from '../../../components/header'
 import FooterC from '../../../components/footer'
+import BtnChooseM from '../../../components/donate/btnChooseM'
 
 export default function DonatePage() {
   return (
@@ -66,10 +67,9 @@ export default function DonatePage() {
 											   className="input-type-of-money form-control border-0 bg-light-green p-3"
 											   dir="ltr"
 											   placeholder="other"/>
-										<button type="button"
-												className="button-choose-type-of-money btn d-flex justify-content-center align-items-center p-3 d-flex bg-white">
-											<i className="fa fa-chevron-down opacity-50"></i>
-										</button>
+										
+                                        <BtnChooseM/>
+                                        
 									</div>
 									<div className="d-flex justify-content-center align-items-center gap-2" dir="ltr">
 										<label htmlFor="accept-terms">رسوم معاملات البرسيم</label>
