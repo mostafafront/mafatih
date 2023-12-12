@@ -369,7 +369,7 @@ ul.nav li.nav-item .active {
 
 .form-box form {
 	box-shadow: 0 0 10px var(--Tlight-light-black);
-	border-radius: 16px;
+	border-radius: 21px;
 }
 
 .form-box form * *:focus, .form-box form * *:active, .form-box form * *:focus-within {

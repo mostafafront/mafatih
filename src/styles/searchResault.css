@@ -1,0 +1,4 @@
+.placeHolder-sr, .placeHolder-sr::placeholder{
+    color: var(--Tlight-darkGreen) !important;
+    font-weight: 800;
+}
