@@ -143,6 +143,7 @@ export default function HeaderC() {
 							</button>
 						</li>
 					</ul>
+					{/* <!--ACCORDIONS FOR TABS--> */}
 					{/* <!--TABS IN OFCANVAS--> */}
 					<div className="tab-content" id="pills-tabContent">
 						<div className="tab-pane fade show active"
@@ -151,9 +152,9 @@ export default function HeaderC() {
 							 aria-labelledby="pills-home-tab"
 							 tabIndex="0">
 							<div className="accordion" id="accordionFlushExample-1">
-								<div className="accordion-item">
+								<div className="accordion-item accordion-item-nav">
 									<h2 className="accordion-header">
-										<button className="accordion-button collapsed d-flex justify-content-end gap-1"
+										<button className="accordion-button accordion-button-nav collapsed d-flex justify-content-end gap-1"
 												dir="ltr"
 												type="button"
 												data-bs-toggle="collapse"
@@ -164,10 +165,10 @@ export default function HeaderC() {
 										</button>
 									</h2>
 									<div id="flush-collapseOne" className="accordion-collapse collapse">
-										<div className="accordion-body">
-											<div className="accordion-item">
+										<div className="accordion-body accordion-body-nav">
+											<div className="accordion-item accordion-item-nav">
 												<h2 className="accordion-header">
-													<button className="accordion-button collapsed d-flex justify-content-end gap-1"
+													<button className="accordion-button accordion-button-nav collapsed d-flex justify-content-end gap-1"
 															dir="ltr"
 															type="button"
 															data-bs-toggle="collapse"
@@ -178,17 +179,17 @@ export default function HeaderC() {
 													</button>
 												</h2>
 												<div id="flush-collapseOne-1" className="accordion-collapse collapse">
-													<div className="accordion-body">
-														<div className="accordion-body">
+													<div className="accordion-body accordion-body-nav">
+														<div className="accordion-body accordion-body-nav">
 															<a href="#" className="text-decoration-none text-dark">اعمال یوم
 																											   تاسوعاء</a>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div className="accordion-item">
+											<div className="accordion-item accordion-item-nav">
 												<h2 className="accordion-header">
-													<button className="accordion-button collapsed d-flex justify-content-end gap-1"
+													<button className="accordion-button accordion-button-nav collapsed d-flex justify-content-end gap-1"
 															dir="ltr"
 															type="button"
 															data-bs-toggle="collapse"
@@ -199,13 +200,13 @@ export default function HeaderC() {
 													</button>
 												</h2>
 												<div id="flush-collapseOne-2" className="accordion-collapse collapse">
-													<div className="accordion-body">
-														<div className="accordion-body">
+													<div className="accordion-body accordion-body-nav">
+														<div className="accordion-body accordion-body-nav">
 															<a href="#" className="text-decoration-none text-dark">اعمال یوم
 																											   عرفة
 															</a>
 														</div>
-														<div className="accordion-body">
+														<div className="accordion-body accordion-body-nav">
 															<a href="#" className="text-decoration-none text-dark">اعمال یوم
 																											   عرفة
 															</a>
@@ -216,9 +217,9 @@ export default function HeaderC() {
 										</div>
 									</div>
 								</div>
-								<div className="accordion-item">
+								<div className="accordion-item accordion-item-nav">
 									<h2 className="accordion-header">
-										<button className="accordion-button collapsed d-flex justify-content-end gap-1"
+										<button className="accordion-button accordion-button-nav collapsed d-flex justify-content-end gap-1"
 												dir="ltr"
 												type="button"
 												data-bs-toggle="collapse"
@@ -229,10 +230,10 @@ export default function HeaderC() {
 										</button>
 									</h2>
 									<div id="flush-collapseTwo" className="accordion-collapse collapse">
-										<div className="accordion-body">
-											<div className="accordion-item">
+										<div className="accordion-body accordion-body-nav">
+											<div className="accordion-item accordion-item-nav">
 												<h2 className="accordion-header">
-													<button className="accordion-button collapsed d-flex justify-content-end gap-1"
+													<button className="accordion-button accordion-button-nav collapsed d-flex justify-content-end gap-1"
 															dir="ltr"
 															type="button"
 															data-bs-toggle="collapse"
@@ -243,7 +244,7 @@ export default function HeaderC() {
 													</button>
 												</h2>
 												<div id="flush-collapseTwo-2" className="accordion-collapse collapse">
-													<div className="accordion-body">Placeholder content for this accordion,
+													<div className="accordion-body accordion-body-nav">Placeholder content for this accordion,
 																				which is intended to demonstrate the
 														<code>.accordion-flush</code> class. This is the second item's
 																				accordion body. Let's imagine this being
@@ -254,9 +255,9 @@ export default function HeaderC() {
 										</div>
 									</div>
 								</div>
-								<div className="accordion-item">
+								<div className="accordion-item accordion-item-nav">
 									<h2 className="accordion-header">
-										<button className="accordion-button collapsed d-flex justify-content-end gap-1"
+										<button className="accordion-button accordion-button-nav collapsed d-flex justify-content-end gap-1"
 												dir="ltr"
 												type="button"
 												data-bs-toggle="collapse"
@@ -267,16 +268,16 @@ export default function HeaderC() {
 										</button>
 									</h2>
 									<div id="flush-collapseThree" className="accordion-collapse collapse">
-										<div className="accordion-body">
-											<div className="accordion-body">
+										<div className="accordion-body accordion-body-nav">
+											<div className="accordion-body accordion-body-nav">
 												<a href="#" className="text-decoration-none text-dark">عااااا</a>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className="accordion-item">
+								<div className="accordion-item accordion-item-nav">
 									<h2 className="accordion-header">
-										<button className="accordion-button collapsed d-flex justify-content-end gap-1"
+										<button className="accordion-button accordion-button-nav collapsed d-flex justify-content-end gap-1"
 												dir="ltr"
 												type="button"
 												data-bs-toggle="collapse"
@@ -287,8 +288,8 @@ export default function HeaderC() {
 										</button>
 									</h2>
 									<div id="flush-collapseSeven" className="accordion-collapse collapse">
-										<div className="accordion-body">
-											<div className="accordion-body">
+										<div className="accordion-body accordion-body-nav">
+											<div className="accordion-body accordion-body-nav">
 												Placeholder content for this accordion, which is intended to demonstrate
 												the <code>.accordion-flush</code> class. This is the third item's
 												accordion body. Nothing more exciting happening here in terms of
@@ -307,9 +308,9 @@ export default function HeaderC() {
 							 aria-labelledby="pills-profile-tab"
 							 tabIndex="0">
 							<div className="accordion" id="accordionFlushExample-2">
-								<div className="accordion-item">
+								<div className="accordion-item accordion-item-nav">
 									<h2 className="accordion-header">
-										<button className="accordion-button collapsed d-flex justify-content-end gap-1"
+										<button className="accordion-button accordion-button-nav collapsed d-flex justify-content-end gap-1"
 												dir="ltr"
 												type="button"
 												data-bs-toggle="collapse"
@@ -320,16 +321,16 @@ export default function HeaderC() {
 										</button>
 									</h2>
 									<div id="flush-collapseFour" className="accordion-collapse collapse">
-										<div className="accordion-body">Placeholder content for this accordion, which is
+										<div className="accordion-body accordion-body-nav">Placeholder content for this accordion, which is
 																	intended to demonstrate the
 											<code>.accordion-flush</code> class. This is the first item's accordion
 																	body.
 										</div>
 									</div>
 								</div>
-								<div className="accordion-item">
+								<div className="accordion-item accordion-item-nav">
 									<h2 className="accordion-header">
-										<button className="accordion-button collapsed d-flex justify-content-end gap-1"
+										<button className="accordion-button accordion-button-nav collapsed d-flex justify-content-end gap-1"
 												dir="ltr"
 												type="button"
 												data-bs-toggle="collapse"
@@ -340,7 +341,7 @@ export default function HeaderC() {
 										</button>
 									</h2>
 									<div id="flush-collapseFive" className="accordion-collapse collapse">
-										<div className="accordion-body">Placeholder content for this accordion, which is
+										<div className="accordion-body accordion-body-nav">Placeholder content for this accordion, which is
 																	intended to demonstrate the
 											<code>.accordion-flush</code> class. This is the second item's accordion
 																	body. Let's imagine this being filled with some
@@ -348,9 +349,9 @@ export default function HeaderC() {
 										</div>
 									</div>
 								</div>
-								<div className="accordion-item">
+								<div className="accordion-item accordion-item-nav">
 									<h2 className="accordion-header">
-										<button className="accordion-button collapsed d-flex justify-content-end gap-1"
+										<button className="accordion-button accordion-button-nav collapsed d-flex justify-content-end gap-1"
 												dir="ltr"
 												type="button"
 												data-bs-toggle="collapse"
@@ -361,7 +362,7 @@ export default function HeaderC() {
 										</button>
 									</h2>
 									<div id="flush-collapseSix" className="accordion-collapse collapse">
-										<div className="accordion-body">Placeholder content for this accordion, which is
+										<div className="accordion-body accordion-body-nav">Placeholder content for this accordion, which is
 																	intended to demonstrate the
 											<code>.accordion-flush</code> class. This is the third item's accordion
 																	body. Nothing more exciting happening here in terms
@@ -375,7 +376,6 @@ export default function HeaderC() {
 							</div>
 						</div>
 					</div>
-					{/* <!--ACCORDIONS FOR TABS--> */}
 					
 					{/* <!--ACCORDIONS FOR TABS--> */}
 				</div>
@@ -416,9 +416,9 @@ export default function HeaderC() {
 				
 				{/* <!-- THEMES IN OFFCANVAS HEADER --> */}
 				<div className="themes overflow-y-auto d-flex flex-column justify-content-between align-items-center gap-2">
-					<img src=".//images/light-theme.png" alt="theme light"/>
-					<img src=".//images/theme-sepia.png" alt="theme sepia"/>
-					<img src=".//images/dark-theme.png" alt="theme dark"/>
+					<img src="./images/light-theme.png" alt="theme light"/>
+					<img src="./images/theme-sepia.png" alt="theme sepia"/>
+					<img src="./images/dark-theme.png" alt="theme dark"/>
 				</div>
 				{/* <!-- THEMES IN OFFCANVAS HEADER --> */}
 				

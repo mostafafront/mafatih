@@ -143,77 +143,77 @@ ul.nav li.nav-item .active {
 
 /*ofcanvas tabs accordion*/
 
-.accordion-item:nth-child(odd) {
+.accordion-item-nav:nth-child(odd) {
 	--bs-accordion-bg: var(--Tlight-green); /*COLOR OF BOX WHEN ACCORDION IS OPEN*/
 	--bs-accordion-active-bg: var(--Tlight-AccordionGreen1); /*COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS OPEN*/
 	--bs-accordion-btn-bg: var(--Tlight-AccordionGreen1); /*THE COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS CLOSED*/
 	border: none;
 }
 
-.accordion-item:nth-child(even) {
+.accordion-item-nav:nth-child(even) {
 	--bs-accordion-bg: var(--Tlight-green); /*COLOR OF BOX WHEN ACCORDION IS OPEN*/
 	--bs-accordion-active-bg: var(--Tlight-AccordionGreen2); /*COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS OPEN*/
 	--bs-accordion-btn-bg: var(--Tlight-AccordionGreen2); /*THE COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS CLOSED*/
 	border: none;
 }
 
-/*.accordion-item:nth-child(odd) .accordion-button {*/
+/*.accordion-item-nav:nth-child(odd) .accordion-button-nav {*/
 /*    padding-top: 5px;*/
 /*    padding-bottom: 5px;*/
 /*    border: none;*/
 /*}*/
 
-/*.accordion-item:nth-child(even) .accordion-button {*/
+/*.accordion-item-nav:nth-child(even) .accordion-button-nav {*/
 /*    padding-top: 5px;*/
 /*    padding-bottom: 5px;*/
 /*    border: none;*/
 /*}*/
 
-.accordion-item:nth-child(odd) .accordion-item {
+.accordion-item-nav:nth-child(odd) .accordion-item-nav {
 	--bs-accordion-bg: transparent; /*COLOR OF BOX WHEN ACCORDION IS OPEN*/
 	--bs-accordion-active-bg: transparent; /*COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS OPEN*/
 	--bs-accordion-btn-bg: transparent; /*THE COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS CLOSED*/
 	border: none;
 }
 
-.accordion-item:nth-child(even) .accordion-item {
+.accordion-item-nav:nth-child(even) .accordion-item-nav {
 	--bs-accordion-bg: transparent; /*COLOR OF BOX WHEN ACCORDION IS OPEN*/
 	--bs-accordion-active-bg: transparent; /*COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS OPEN*/
 	--bs-accordion-btn-bg: transparent; /*THE COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS CLOSED*/
 	border: none;
 }
 
-.accordion-body > * {
+.accordion-body-nav > * {
 	/*padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);*/
 	/*border-bottom: 1px solid grey;*/
 	border-radius: 0;
 }
 
-.accordion-body .accordion-item > * {
+.accordion-body-nav .accordion-item-nav > * {
 	/*padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);*/
 	/*border-bottom: 1px solid grey;*/
 	border-radius: 0;
 }
 
-.accordion-body .accordion-item .accordion-body-links > * {
+.accordion-body-nav .accordion-item-nav .accordion-body-links > * {
 	/*padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);*/
 	/*border-bottom: 1px solid grey;*/
 	border-radius: 0;
 }
 
-.accordion-body > *:last-child {
+.accordion-body-nav > *:last-child {
 	/*padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);*/
 	border-bottom: none;
 	border-radius: 0;
 }
 
-.accordion-body .accordion-item > *:last-child {
+.accordion-body-nav .accordion-item-nav > *:last-child {
 	/*padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);*/
 	border-bottom: 1px none;
 	border-radius: 0;
 }
 
-.accordion-body .accordion-item .accordion-body-links > *:last-child {
+.accordion-body-nav .accordion-item-nav .accordion-body-links > *:last-child {
 	/*padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);*/
 	border-bottom: 1px none;
 	border-radius: 0;
@@ -224,7 +224,7 @@ ul.nav li.nav-item .active {
 }
 
 /*CHANGE STYLE OF COLLAPSED BUTTON IN ACCORDION*/
-.accordion-button::after {
+.accordion-button-nav::after {
 	flex-shrink: 0;
 	width: var(--bs-accordion-btn-icon-width);
 	height: var(--bs-accordion-btn-icon-width);
@@ -239,19 +239,19 @@ ul.nav li.nav-item .active {
 }
 
 /*CHANGE STYLE OF COLLAPSED BUTTON IN ACCORDION WHEN ACCORDION IS OPEN*/
-.accordion-button:not(.collapsed)::after {
+.accordion-button-nav:not(.collapsed)::after {
 	background-image: var(--bs-accordion-btn-icon);
 	transform: rotate(180deg);
 }
 
-.accordion-button:focus {
+.accordion-button-nav:focus {
 	z-index: 3;
 	border-color: transparent !important;
 	outline: 0;
 	box-shadow: none !important;
 }
 
-.accordion-button:not(.collapsed) {
+.accordion-button-nav:not(.collapsed) {
 	color: var(--bs-accordion-active-color);
 	background-color: var(--bs-accordion-active-bg);
 	box-shadow: none;
