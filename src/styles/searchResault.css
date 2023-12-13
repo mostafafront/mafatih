@@ -2,3 +2,35 @@
     color: var(--Tlight-darkGreen) !important;
     font-weight: 800;
 }
+
+.accordion-item-sr {
+	/*--bs-accordion-bg: var(--Tlight-green); COLOR OF BOX WHEN ACCORDION IS OPEN*/   /* this is background of collapse or accordion body */
+	--bs-accordion-active-bg: var(--Tlight-darkGreen); /*COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS OPEN*/
+	--bs-accordion-btn-bg: var(--Tlight-darkGreen); /*THE COLOR OF COLLAPSED BUTTON WHEN ACCORDION IS CLOSED*/
+	border: none;
+}
+
+.accordion-button-sr{
+    color: var(--Tlight-titleAccordion-sr) !important;
+    font-weight: 800;
+}
+
+.accordion-button-sr:focus, .accordion-button-sr:focus-visible{
+    box-shadow: none !important;
+}
+
+.accordion-button-sr:not(.collapsed){
+    color: var(--Tlight-titleAccordion-sr) !important;
+}
+
+/* for show and customize arrow icon and hide the default bootsrap icon */
+.accordion-button-sr::after {
+    content: none !important;
+}
+
+.icon-accordion-sr{
+    transition: all .2s ease-in;
+}
+.accordion-button-sr:not(.collapsed) .icon-accordion-sr{
+    transform: rotate(-90deg);
+}

@@ -125,10 +125,10 @@ export default function SearchResaultPage() {
         {/* Second Section */}
 
         <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div class="accordion-item accordion-item-sr">
+            <h2 class="accordion-header accordion-header-sr">
               <button
-                class="accordion-button d-flex justify-content-between align-items-center"
+                class="accordion-button accordion-button-sr d-flex justify-content-between align-items-center"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseOne"
@@ -136,13 +136,14 @@ export default function SearchResaultPage() {
                 aria-controls="panelsStayOpen-collapseOne"
               >
                 ادعیة و زیاراة
+                <i className="fa fa-chevron-left icon-accordion-sr"></i>
               </button>
             </h2>
             <div
               id="panelsStayOpen-collapseOne"
               class="accordion-collapse collapse show"
             >
-              <div class="accordion-body">
+              <div class="accordion-body accordion-body-s">
                 <strong>This is the first item's accordion body.</strong> It is
                 shown by default, until the collapse plugin adds the appropriate
                 classes that we use to style each element. These classes control
@@ -155,10 +156,10 @@ export default function SearchResaultPage() {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div class="accordion-item accordion-item-sr">
+            <h2 class="accordion-header accordion-header-sr">
               <button
-                class="accordion-button d-flex justify-content-between align-items-center"
+                class="accordion-button accordion-button-sr d-flex justify-content-between align-items-center"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseTwo"
@@ -166,13 +167,14 @@ export default function SearchResaultPage() {
                 aria-controls="panelsStayOpen-collapseTwo"
               >
                 الأعمال
+              <i className="fa fa-chevron-left icon-accordion-sr"></i>
               </button>
             </h2>
             <div
               id="panelsStayOpen-collapseTwo"
               class="accordion-collapse collapse show"
             >
-              <div class="accordion-body">
+              <div class="accordion-body accordion-body-s">
                 <strong>This is the second item's accordion body.</strong> It is
                 hidden by default, until the collapse plugin adds the
                 appropriate classes that we use to style each element. These
