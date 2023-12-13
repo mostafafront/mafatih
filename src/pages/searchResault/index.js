@@ -2,6 +2,7 @@ import React from "react";
 import HeaderC from "../../../components/header";
 import FilterInput from "../../../components/index/filterInput";
 import Link from "next/link";
+import FooterC from "../../../components/footer";
 
 export default function SearchResaultPage() {
   function preventSubmit(event) {
@@ -338,6 +339,7 @@ export default function SearchResaultPage() {
         </div>
         {/* Second Section */}
       </main>
+      <FooterC/>
     </>
   );
 }
