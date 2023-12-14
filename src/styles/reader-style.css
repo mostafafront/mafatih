@@ -2,6 +2,12 @@
 @import "style.css";
 @import "kfg-font.css";
 
+/* header */
+.radius-reader{
+    border-radius: 0px 0px 24px 24px;
+}
+/* header */
+
 .content .prayer {
 	font-family: KFG;
 }

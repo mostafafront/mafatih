@@ -8,7 +8,7 @@ export default function HeaderC() {
     <>
     		{/* <!--  HEADER  --> */}
 		<header className="header position-sticky top-0 z-in-nav">
-			<nav className="navbar bg-header  w-100" dir="ltr">
+			<nav className="navbar bg-header radius-reader w-100" dir="ltr">
 				<div className="container-fluid d-flex justify-content-between px-4">
 					<div className="links width-element-header">
 						<div className="d-flex gap-4">
