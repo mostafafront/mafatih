@@ -150,8 +150,8 @@ export default function SearchResaultPage() {
                   <div className="titleOf-textFind">
                     زیارت
                     <span className="white-space"> </span>
-                    <span className="textFinded">
-                      <Link href={"./"}>عاشورا</Link>
+                    <span>
+                      <Link className="textFinded" href={"./"}>عاشورا</Link>
                     </span>
                     <span className="white-space"> </span>
                     امام حسین
@@ -161,8 +161,8 @@ export default function SearchResaultPage() {
                   <div className="title-textFind">
                     زیارت امام حسین(ع) در روز
                     <span className="white-space"> </span>
-                    <span className="textFinded">
-                      <Link href={"./"}>عاشورا</Link>
+                    <span>
+                      <Link className="textFinded" href={"./"}>عاشورا</Link>
                     </span>
                     <span className="white-space"> </span>
                   </div>
@@ -171,8 +171,8 @@ export default function SearchResaultPage() {
                       <span className="three-point">...</span>
                       <span className="white-space"> </span>
                       بدان که زیارت روایتشده برای روز{" "}
-                      <span className="textFinded">
-                        <Link href={"./"}>عاشورا</Link>
+                      <span>
+                        <Link className="textFinded" href={"./"}>عاشورا</Link>
                       </span>{" "}
                       چند زیارت است و ما در اینجا به خاطر رعایت مختصرنویسی فقط
                       به بیان<span className="three-point">...</span>ما در اینجا
@@ -192,8 +192,8 @@ export default function SearchResaultPage() {
                       شب های قدر پنجم زیارت آن حضرت در عید فطر و قربان ششم زیارت
                       آن حضرت در روز عرفه هفتم زیارت
                       <span className="white-space"> </span>
-                      <span className="textFinded">
-                        <Link href={"./"}>عاشورا</Link>
+                      <span>
+                        <Link className="textFinded" href={"./"}>عاشورا</Link>
                       </span>
                       <span className="white-space"> </span>
                       <span className="three-point">...</span>
@@ -204,8 +204,8 @@ export default function SearchResaultPage() {
                   <div className="title-textFind">
                     زیارت امام حسین(ع) در روز
                     <span className="white-space"> </span>
-                    <span className="textFinded">
-                      <Link href={"./"}>عاشورا</Link>
+                    <span>
+                      <Link className="textFinded" href={"./"}>عاشورا</Link>
                     </span>
                     <span className="white-space"> </span>
                   </div>
@@ -214,8 +214,8 @@ export default function SearchResaultPage() {
                       <span className="three-point">...</span>
                       <span className="white-space"> </span>
                       بدان که زیارت روایتشده برای روز{" "}
-                      <span className="textFinded">
-                        <Link href={"./"}>عاشورا</Link>
+                      <span>
+                        <Link className="textFinded" href={"./"}>عاشورا</Link>
                       </span>{" "}
                       چند زیارت است و ما در اینجا به خاطر رعایت مختصرنویسی فقط
                       به بیان<span className="three-point">...</span>ما در اینجا
@@ -228,8 +228,8 @@ export default function SearchResaultPage() {
                   <div className="titleOf-textFind">
                     زیارت
                     <span className="white-space"> </span>
-                    <span className="textFinded">
-                      <Link href={"./"}>عاشورا</Link>
+                    <span>
+                      <Link className="textFinded" href={"./"}>عاشورا</Link>
                     </span>
                     <span className="white-space"> </span>
                     امام حسین
@@ -268,8 +268,8 @@ export default function SearchResaultPage() {
                       شب های قدر پنجم زیارت آن حضرت در عید فطر و قربان ششم زیارت
                       آن حضرت در روز عرفه هفتم زیارت
                       <span className="white-space"> </span>
-                      <span className="textFinded">
-                        <Link href={"./"}>عاشورا</Link>
+                      <span>
+                        <Link className="textFinded" href={"./"}>عاشورا</Link>
                       </span>
                       <span className="white-space"> </span>
                       <span className="three-point">...</span>
@@ -287,8 +287,8 @@ export default function SearchResaultPage() {
                       اعمال روز عاشورا
 ... ماتم داشته باشند به صورتی که در ماتم عزیزترین اولاد و اقوام خود اشتغال میورزند و آن حضرت را به زیارت عاشورا ... از حضرت رضا علیه السلام روایت شده هرکه کوشیدن در حوائج خود را در روز عاشورا ترک کند و به دنبال کاری ... السما یوم عاشورا یا مسکن سفینه نوح علی الجودی یوم عاشورا یا غیاث ابراهیم من النار یوم عاشورا ... ادریس به آسمان در روز عاشورا ای آرامدهنده کشتی نوح بر جودی در روز عاشورا ای فریادرس ابراهیم از آتش در ... روز عاشورا ...
                       <span className="white-space"> </span>
-                      <span className="textFinded">
-                        <Link href={"./"}>عاشورا</Link>
+                      <span>
+                        <Link className="textFinded" href={"./"}>عاشورا</Link>
                       </span>
                       <span className="white-space"> </span>
                       <span className="three-point">...</span>
@@ -306,8 +306,8 @@ export default function SearchResaultPage() {
                       شب های قدر پنجم زیارت آن حضرت در عید فطر و قربان ششم زیارت
                       آن حضرت در روز عرفه هفتم زیارت
                       <span className="white-space"> </span>
-                      <span className="textFinded">
-                        <Link href={"./"}>عاشورا</Link>
+                      <span>
+                        <Link className="textFinded" href={"./"}>عاشورا</Link>
                       </span>
                       <span className="white-space"> </span>
                       <span className="three-point">...</span>
@@ -325,8 +325,8 @@ export default function SearchResaultPage() {
                       اعمال روز عاشورا
 ... ماتم داشته باشند به صورتی که در ماتم عزیزترین اولاد و اقوام خود اشتغال میورزند و آن حضرت را به زیارت عاشورا ... از حضرت رضا علیه السلام روایت شده هرکه کوشیدن در حوائج خود را در روز عاشورا ترک کند و به دنبال کاری ... السما یوم عاشورا یا مسکن سفینه نوح علی الجودی یوم عاشورا یا غیاث ابراهیم من النار یوم عاشورا ... ادریس به آسمان در روز عاشورا ای آرامدهنده کشتی نوح بر جودی در روز عاشورا ای فریادرس ابراهیم از آتش در ... روز عاشورا ...
                       <span className="white-space"> </span>
-                      <span className="textFinded">
-                        <Link href={"./"}>عاشورا</Link>
+                      <span>
+                        <Link className="textFinded" href={"./"}>عاشورا</Link>
                       </span>
                       <span className="white-space"> </span>
                       <span className="three-point">...</span>
