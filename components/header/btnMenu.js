@@ -7,19 +7,19 @@ export default function BtnMenu() {
 
       const offcanvasBars = document.querySelector(".offcanvas-bars");
       const barsClose = document.getElementById("bars-close");
-    //   const footer = document.querySelector(".footer");
+      const footer = document.querySelector(".footer");
       
       offcanvasBars.addEventListener("show.bs.offcanvas", function () {
     barsClose.classList.add("close-offcanvas-header");
     barsClose.innerHTML = `<i class="fa-solid fa-close fa-xl"></i>`;
-    // footer.classList.add("z-1000");
+    footer.classList.add("z-1000");
   });
 
   offcanvasBars.addEventListener("hide.bs.offcanvas", function () {
     barsClose.classList.remove("close-offcanvas-header");
     barsClose.classList.add("btn-close-offcanvas");
     barsClose.innerHTML = `<i class="fa-solid fa-bars fa-xl"></i>`;
-    // footer.classList.remove("z-1000");
+    footer.classList.remove("z-1000");
 });
 
 },[])
