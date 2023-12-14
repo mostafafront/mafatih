@@ -431,6 +431,8 @@ export default function HeaderC() {
 			</div>
 		</div>
 		{/* <!-- OFFCANVAS NAV PALLETE --> */}
+
+		
     </>
   )
 }
