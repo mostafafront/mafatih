@@ -2,6 +2,7 @@ import React from 'react'
 import BtnMenu from './btnMenu'
 import BtnPallete from './btnPallete'
 import FilterOffcanvas from './filterOffcanvas'
+import Link from 'next/link'
 
 export default function HeaderC() {
   return (
@@ -36,9 +37,9 @@ export default function HeaderC() {
 						</div>
 					</div>
 					<div className="icon-link">
-						<a className="navbar-brand" href="#">
+						<Link href={"./"}>
 							<img src="/images/logo.png" alt="logo of site" width="120"/>
-						</a>
+						</Link>
 					</div>
 					<div className="navbar-toggle width-element-header d-flex justify-content-end">
 						
