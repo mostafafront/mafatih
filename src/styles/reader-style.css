@@ -8,7 +8,7 @@
 }
 
 .height-header{
-	height: 62px !important;
+	height: 65px !important; /* in figma its 62 */
 }
 
 .leftHeader-reader{
