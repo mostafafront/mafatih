@@ -6,6 +6,31 @@
 .radius-reader{
     border-radius: 0px 0px 24px 24px;
 }
+
+.height-header{
+	height: 62px !important;
+}
+
+.leftHeader-reader{
+	font-size: 20px;
+}
+
+.backHome-iconReader > *{
+	color: var(--Tlight-veryDarkGreen);
+}
+
+.titlePrayer{
+	width: 60% !important;
+}
+
+
+.titlePrayer-text{
+	font-size: 24px !important;
+	color: var(--Tlight-bg-textFind-title-sr);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 /* header */
 
 .content .prayer {

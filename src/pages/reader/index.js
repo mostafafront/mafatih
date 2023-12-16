@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import BtnMenu from "../../../components/header/btnMenu";
 import FilterOffcanvas from "../../../components/header/filterOffcanvas";
 
@@ -7,14 +8,25 @@ export default function ReaderPage() {
     <>
       {/* <!--  HEADER  --> */}
       <header className="header position-sticky top-0 z-in-nav">
-        <nav className="navbar bg-header w-100" dir="ltr">
+        <nav className="navbar bg-header radius-reader height-header w-100" dir="ltr">
           <div className="container-fluid d-flex justify-content-between px-4">
-            <div className="icon-link">
-              <a className="navbar-brand" href="#">
-                <img src="/images/logo.png" alt="logo of site" width="120" />
-              </a>
+            <div className="leftHeader-reader d-flex align-items-center gap-4">
+              <div className="backHome-iconReader">
+                <Link href={"./"}>
+                  <i className="fa-solid fa-chevron-left"></i>
+                </Link>
+              </div>
+              <div className="savePrayer-iconReader">
+                <button className="border-0 bg-transparent p-0 p-md-2">
+                <i className="fa-regular fa-bookmark"></i>{" "}
+                {/* for show use the class : fa-solid */}
+                </button>
+              </div>
             </div>
-            <div className="navbar-toggle width-element-header d-flex justify-content-end">
+            <div className="titlePrayer d-flex justify-content-center align-items-center" dir="rtl">
+                <h1 className="titlePrayer-text mb-0">زیارت عاشورا</h1>
+            </div>
+            <div className="navbar-toggle d-flex justify-content-end">
               <BtnMenu />
             </div>
           </div>
@@ -600,10 +612,7 @@ export default function ReaderPage() {
             </div>
             <div className="play">
               <button type="button" className="btn border-0 p-0">
-                <img
-                  src="/images/play-icon.svg"
-                  alt="play icon"
-                />
+                <img src="/images/play-icon.svg" alt="play icon" />
               </button>
             </div>
             <div className="singer">
@@ -693,22 +702,10 @@ export default function ReaderPage() {
               tabIndex="0"
             >
               <div className="themes d-flex flex-column justify-content-between align-items-center">
-                <img
-                  src="/images/light-theme.png"
-                  alt="theme light"
-                />
-                <img
-                  src="/images/theme-sepia.png"
-                  alt="theme sepia"
-                />
-                <img
-                  src="/images/dark-theme.png"
-                  alt="theme dark"
-                />
-                <img
-                  src="/images/theme-sepia.png"
-                  alt="theme sepia"
-                />
+                <img src="/images/light-theme.png" alt="theme light" />
+                <img src="/images/theme-sepia.png" alt="theme sepia" />
+                <img src="/images/dark-theme.png" alt="theme dark" />
+                <img src="/images/theme-sepia.png" alt="theme sepia" />
               </div>
             </div>
             <div
