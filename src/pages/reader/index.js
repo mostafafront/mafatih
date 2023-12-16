@@ -237,12 +237,12 @@ export default function ReaderPage() {
                           >
                             <div className="accordion-body accordion-body-nav">
                               <div className="accordion-body accordion-body-nav">
-                                <a
-                                  href="#"
+                                <Link
+                                  href={"./"}
                                   className="text-decoration-none text-dark"
                                 >
                                   اعمال یوم تاسوعاء
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -269,20 +269,20 @@ export default function ReaderPage() {
                           >
                             <div className="accordion-body accordion-body-nav">
                               <div className="accordion-body accordion-body-nav">
-                                <a
-                                  href="#"
+                                <Link
+                                  href={"./"}
                                   className="text-decoration-none text-dark"
                                 >
                                   اعمال یوم عرفة
-                                </a>
+                                </Link>
                               </div>
                               <div className="accordion-body accordion-body-nav">
-                                <a
-                                  href="#"
+                                <Link
+                                  href={"./"}
                                   className="text-decoration-none text-dark"
                                 >
                                   اعمال یوم عرفة
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -361,12 +361,12 @@ export default function ReaderPage() {
                     >
                       <div className="accordion-body accordion-body-nav">
                         <div className="accordion-body accordion-body-nav">
-                          <a
-                            href="#"
+                          <Link
+                            href={"./"}
                             className="text-decoration-none text-dark"
                           >
                             عااااا
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -507,9 +507,9 @@ export default function ReaderPage() {
             <div className="position-relative w-100 px-3">
               <div className="d-flex bg-light-green w-100 border-top-1 align-items-center gap-3 text-profile-color justify-content-between py-2">
                 <div className="d-flex align-items-center gap-3">
-                  <a href="#" className="text-profile-color">
+                  <Link href={"./"} className="text-profile-color">
                     <i className="fa-regular fa-circle-user fa-2xl"></i>
-                  </a>
+                  </Link>
                   <span className="h3 m-0">محمد حسین علیزاده</span>
                 </div>
                 <div className="dropup">
@@ -522,25 +522,25 @@ export default function ReaderPage() {
                   </button>
                   <ul className="dropdown-menu dropdown-menu-end bg-very-light-green mb-3 rounded-4 p-0">
                     <li>
-                      <a
+                      <Link
                         className="dropdown-item rounded-4 rounded-bottom-0"
-                        href="#"
+                        href={"./"}
                       >
                         Action
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <Link className="dropdown-item" href={"./"}>
                         Action two
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="dropdown-item rounded-4 rounded-top-0"
-                        href="#"
+                        href={"./"}
                       >
                         Action three
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -555,7 +555,7 @@ export default function ReaderPage() {
       {/* <!-- PRAYER BOX --> */}
       <section className="prayer-box pt-4">
         <div className="container">
-          <article className="text-of-prayer pt-2 px-2 px-md-0 pb-3 mb-5 d-flex flex-column align-items-center gap-4">
+          <rtLinkicle className="text-of-prayer pt-2 px-2 px-md-0 pb-3 mb-5 d-flex flex-column align-items-center gap-4">
             <div className="head-prayer">
               <img
                 src="/images/in-the-name-of-god.svg"
@@ -579,7 +579,7 @@ export default function ReaderPage() {
                 متن قرآن متن قرآن متن قرآن متن قرآن متن قرآن
               </span>
             </p>
-          </article>
+          </rtLinkicle>
         </div>
       </section>
       {/* <!-- PRAYER BOX --> */}

@@ -5,6 +5,7 @@ import HeaderC from "../../components/header";
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css'; //میتونه نباشه
 import FilterInput from "../../components/index/filterInput";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -201,7 +202,7 @@ export default function Home() {
 			<section className="profile bg-light-green pt-1 border-top-1">
 				<div className="container py-4 px-4">
 					<div className="profile-information d-flex flex-column gap-3 align-items-center justify-content-center text-profile-color">
-						<a href="#" className="text-profile-color"><i className="fa-regular fa-circle-user fa-2xl"></i></a>
+						<Link href="#" className="text-profile-color"><i className="fa-regular fa-circle-user fa-2xl"></i></Link>
 						<div className="h3 m-0 fw-bolder">محمد حسین علیزاده</div>
 					</div>
 					<div className="profile-descriptions pt-4 d-flex justify-content-between">
@@ -280,22 +281,22 @@ export default function Home() {
 				</div>
 				<div className="owl-carousel">
 					<div className="item px-3">
-						<a href="./reader.html"><img src="/images/owl-prayer.svg" alt="prayer"/></a>
+						<Link href={"./reader"}><img src="/images/owl-prayer.svg" alt="prayer"/></Link>
 					</div>
 					<div className="item px-3">
-						<a href="./reader.html"><img src="/images/owl-prayer.svg" alt="prayer"/></a>
+						<Link href={"./reader"}><img src="/images/owl-prayer.svg" alt="prayer"/></Link>
 					</div>
 					<div className="item px-3">
-						<a href="./reader.html"><img src="/images/owl-prayer.svg" alt="prayer"/></a>
+						<Link href={"./reader"}><img src="/images/owl-prayer.svg" alt="prayer"/></Link>
 					</div>
 					<div className="item px-3">
-						<a href="./reader.html"><img src="/images/owl-prayer.svg" alt="prayer"/></a>
+						<Link href={"./reader"}><img src="/images/owl-prayer.svg" alt="prayer"/></Link>
 					</div>
 					<div className="item px-3">
-						<a href="./reader.html"><img src="/images/owl-prayer.svg" alt="prayer"/></a>
+						<Link href={"./reader"}><img src="/images/owl-prayer.svg" alt="prayer"/></Link>
 					</div>
 					<div className="item px-3">
-						<a href="./reader.html"><img src="/images/owl-prayer.svg" alt="prayer"/></a>
+						<Link href={"./reader"}><img src="/images/owl-prayer.svg" alt="prayer"/></Link>
 					</div>
 				</div>
 			</section>

@@ -19,13 +19,13 @@ export default function HeaderC() {
 								</button>
 								<ul className="dropdown-menu-header dropdown-menu rounded-4 p-0 mt-5">
 									<li>
-										<a className="dropdown-item px-2 rounded-4 bg-very-light-green" href="#">Action one</a>
+										<Link className="dropdown-item px-2 rounded-4 bg-very-light-green" href={"./"}>Action one</Link>
 									</li>
 									<li>
-										<a className="dropdown-item px-2 rounded-4 bg-very-light-green" href="#">Action two</a>
+										<Link className="dropdown-item px-2 rounded-4 bg-very-light-green" href={"./"}>Action two</Link>
 									</li>
 									<li>
-										<a className="dropdown-item px-2 rounded-4 bg-very-light-green" href="#">Action two</a>
+										<Link className="dropdown-item px-2 rounded-4 bg-very-light-green" href={"./"}>Action two</Link>
 									</li>
 								</ul>
 							</div>
@@ -182,8 +182,8 @@ export default function HeaderC() {
 												<div id="flush-collapseOne-1" className="accordion-collapse collapse">
 													<div className="accordion-body accordion-body-nav">
 														<div className="accordion-body accordion-body-nav">
-															<a href="#" className="text-decoration-none text-dark">اعمال یوم
-																											   تاسوعاء</a>
+															<Link href={"./"} className="text-decoration-none text-dark">اعمال یوم
+																											   تاسوعاء</Link>
 														</div>
 													</div>
 												</div>
@@ -203,14 +203,14 @@ export default function HeaderC() {
 												<div id="flush-collapseOne-2" className="accordion-collapse collapse">
 													<div className="accordion-body accordion-body-nav">
 														<div className="accordion-body accordion-body-nav">
-															<a href="#" className="text-decoration-none text-dark">اعمال یوم
+															<Link href={"./"} className="text-decoration-none text-dark">اعمال یوم
 																											   عرفة
-															</a>
+															</Link>
 														</div>
 														<div className="accordion-body accordion-body-nav">
-															<a href="#" className="text-decoration-none text-dark">اعمال یوم
+															<Link href={"./"} className="text-decoration-none text-dark">اعمال یوم
 																											   عرفة
-															</a>
+															</Link>
 														</div>
 													</div>
 												</div>
@@ -271,7 +271,7 @@ export default function HeaderC() {
 									<div id="flush-collapseThree" className="accordion-collapse collapse">
 										<div className="accordion-body accordion-body-nav">
 											<div className="accordion-body accordion-body-nav">
-												<a href="#" className="text-decoration-none text-dark">عااااا</a>
+												<Link href={"./"} className="text-decoration-none text-dark">عااااا</Link>
 											</div>
 										</div>
 									</div>
@@ -385,7 +385,7 @@ export default function HeaderC() {
 					<div className="position-relative w-100 px-3">
 						<div className="d-flex bg-light-green w-100 border-top-1 align-items-center gap-3 text-profile-color justify-content-between py-2">
 							<div className="d-flex align-items-center gap-3">
-								<a href="#" className="text-profile-color"><i className="fa-regular fa-circle-user fa-2xl"></i></a>
+								<Link href={"./"} className="text-profile-color"><i className="fa-regular fa-circle-user fa-2xl"></i></Link>
 								<span className="h3 m-0">محمد حسین علیزاده</span>
 							</div>
 							<div className="dropup">
@@ -393,9 +393,9 @@ export default function HeaderC() {
 									<i className="fa-solid fa-caret-left"></i>
 								</button>
 								<ul className="dropdown-menu dropdown-menu-end bg-very-light-green mb-3 rounded-4 p-0">
-									<li><a className="dropdown-item rounded-4 rounded-bottom-0" href="#">Action</a></li>
-									<li><a className="dropdown-item" href="#">Action two</a></li>
-									<li><a className="dropdown-item rounded-4 rounded-top-0" href="#">Action three</a></li>
+									<li><Link className="dropdown-item rounded-4 rounded-bottom-0" href={"./"}>Action</Link></li>
+									<li><Link className="dropdown-item" href={"./"}>Action two</Link></li>
+									<li><Link className="dropdown-item rounded-4 rounded-top-0" href={"./"}>Action three</Link></li>
 								</ul>
 							</div>
 						</div>

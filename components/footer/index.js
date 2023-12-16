@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function FooterC() {
@@ -9,38 +10,38 @@ export default function FooterC() {
 				
 				{/* <!--rafed saghafiye --> */}
 				<div className="rafed-saghafiye align-self-center">
-					<a href="#">
+					<Link href={"./"}>
 						<img src="/images/footer-preyer.svg" alt="rafed saghafiye" width="100%"/>
-					</a>
+					</Link>
 				</div>
 				{/* <!--rafed saghafiye --> */}
 				
 				{/* <!--socials --> */}
 				<div className="social d-flex justify-content-between w-75 m-auto pt-4">
 					<div className="skype">
-						<a href="#">
+						<Link href={"./"}>
 							<img src="/images/skyp.svg" alt="skype loge"/>
-						</a>
+						</Link>
 					</div>
 					<div className="twitter">
-						<a href="#">
+						<Link href={"./"}>
 							<img src="/images/twitte.svg" alt="skype loge"/>
-						</a>
+						</Link>
 					</div>
 					<div className="whatsapp">
-						<a href="#">
+						<Link href={"./"}>
 							<img src="/images/whatsUp.svg" alt="skype loge"/>
-						</a>
+						</Link>
 					</div>
 					<div className="facebook">
-						<a href="#">
+						<Link href={"./"}>
 							<img src="/images/facebook.svg" alt="skype loge"/>
-						</a>
+						</Link>
 					</div>
 					<div className="instagram">
-						<a href="#">
+						<Link href={"./"}>
 							<img src="/images/instgram.svg" alt="skype loge"/>
-						</a>
+						</Link>
 					</div>
 				</div>
 				{/* <!--socials --> */}
@@ -62,9 +63,9 @@ export default function FooterC() {
 								فارسی
 							</div>
 							<ul className="dropdown-menu dropdown-menu-start">
-								<li><a className="dropdown-item" href="#">Action</a></li>
-								<li><a className="dropdown-item" href="#">Another action</a></li>
-								<li><a className="dropdown-item" href="#">Something else here</a></li>
+								<li><Link className="dropdown-item" href={"./"}>Action</Link></li>
+								<li><Link className="dropdown-item" href={"./"}>Another action</Link></li>
+								<li><Link className="dropdown-item" href={"./"}>Something else here</Link></li>
 							</ul>
 						</div>
 					</div>
