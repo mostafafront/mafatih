@@ -3,6 +3,7 @@ import Link from "next/link";
 import BtnMenu from "../../../components/header/btnMenu";
 import FilterOffcanvas from "../../../components/header/filterOffcanvas";
 import BtnSetting from "../../../components/reader/settingFooter/btnSetting";
+import BtnDecFont from "../../../components/reader/settingFooter/btnDecFont";
 
 export default function ReaderPage() {
   return (
@@ -836,12 +837,7 @@ export default function ReaderPage() {
                   اللّٰهِ
                 </div>
                 <div className="buttons-for-change-font-size d-flex justify-content-center gap-3">
-                  <button className="btn border decrease">
-                    <span>
-                      <i className="fa-regular fa-minus fa-xs"></i>
-                      <i className="fa-regular fa-a"></i>
-                    </span>
-                  </button>
+                  <BtnDecFont/>
                   <input
                     type="number"
                     name="font-size"
