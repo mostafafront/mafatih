@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import BtnMenu from "../../../components/header/btnMenu";
 import FilterOffcanvas from "../../../components/header/filterOffcanvas";
+import BtnSetting from "../../../components/reader/btnSetting";
 
 export default function ReaderPage() {
   return (
@@ -709,15 +710,7 @@ export default function ReaderPage() {
         <div className="container">
           <div className="d-flex py-3 justify-content-between align-items-center">
             <div className="themes">
-              <button
-                className="btn setting-btn"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasBottom-setting"
-                aria-controls="offcanvasBottom-setting"
-              >
-                <i className="fa-regular fa-gear fa-xl"></i>
-              </button>
+              <BtnSetting/>
             </div>
             <div className="speed">
               <button
@@ -815,7 +808,7 @@ export default function ReaderPage() {
           </div>
           <div className="tab-content" id="nav-tabContent">
             <div
-              className="tab-pane fade show active p-3"
+              className="tab-pane tab-pane-reader fade show active p-3"
               id="nav-home"
               role="tabpanel"
               aria-labelledby="nav-home-tab"
@@ -829,7 +822,7 @@ export default function ReaderPage() {
               </div>
             </div>
             <div
-              className="tab-pane fade"
+              className="tab-pane tab-pane-reader fade"
               id="nav-contact"
               role="tabpanel"
               aria-labelledby="nav-contact-tab"
@@ -866,7 +859,7 @@ export default function ReaderPage() {
               </div>
             </div>
             <div
-              className="tab-pane fade P-3"
+              className="tab-pane tab-pane-reader fade P-3"
               id="nav-disabled"
               role="tabpanel"
               aria-labelledby="nav-disabled-tab"
