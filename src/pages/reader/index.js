@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import BtnMenu from "../../../components/header/btnMenu";
 import FilterOffcanvas from "../../../components/header/filterOffcanvas";
-import BtnSetting from "../../../components/reader/settingFooter/btnSetting";
+import BtnOffcanvasSetting from "../../../components/reader/settingFooter/btnOffcanvasSetting";
 import BtnDecFont from "../../../components/reader/settingFooter/btnDecFont";
 import BtnIncFont from "../../../components/reader/settingFooter/btnIncFont";
 import InputFont from "../../../components/reader/settingFooter/inputFont";
@@ -714,7 +714,7 @@ export default function ReaderPage() {
         <div className="container">
           <div className="d-flex py-3 justify-content-between align-items-center">
             <div className="themes">
-              <BtnSetting/>
+              <BtnOffcanvasSetting/>
             </div>
             <div className="speed">
               <button

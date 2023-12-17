@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-export default function BtnSetting() {
+export default function BtnOffcanvasSetting() {
 
   useEffect(() => {
     const settingBtn = document.querySelector(".setting-btn");
