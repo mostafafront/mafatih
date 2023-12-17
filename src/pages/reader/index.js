@@ -9,6 +9,7 @@ import InputFont from "../../../components/reader/settingFooter/inputFont";
 import FontChange from "../../../components/reader/settingFooter/fontChange";
 import BtnOffcanvasSpeed from "../../../components/reader/speedFooter/btnOffcanvasSpeed";
 import BtnOffcanvasSinger from "../../../components/reader/singerFooter/btnOffcanvasSinger";
+import SingersChange from "../../../components/reader/singerFooter/singersChange";
 
 export default function ReaderPage() {
   return (
@@ -927,120 +928,7 @@ export default function ReaderPage() {
             </div>
           </div>
           <div className="boorder-singer border w-100"></div>
-          <div className="singers d-flex flex-column gap-3 p-3 overflow-y-auto">
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/dark-theme.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/singer-1.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/singer-1.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/singer-1.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/dark-theme.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/singer-1.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/singer-1.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/singer-1.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/dark-theme.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/singer-1.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/singer-1.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/singer-1.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/dark-theme.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-            <div className="singer-box shadow-light d-flex justify-content-center align-items-center gap-5 position-relative">
-              <img
-                className="img-singer rounded-circle position-absolute start-0"
-                src="/images/singer-1.png"
-                alt="photo of singer one"
-              />
-              <span className="py-2">عبد الحي آل قمبر</span>
-            </div>
-          </div>
+          <SingersChange/>
         </div>
       </div>
       {/* <!-- OFFCANVAS SINGER FOOTER --> */}
