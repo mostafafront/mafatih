@@ -4,6 +4,8 @@ import BtnMenu from "../../../components/header/btnMenu";
 import FilterOffcanvas from "../../../components/header/filterOffcanvas";
 import BtnSetting from "../../../components/reader/settingFooter/btnSetting";
 import BtnDecFont from "../../../components/reader/settingFooter/btnDecFont";
+import BtnIncFont from "../../../components/reader/settingFooter/btnIncFont";
+import InputFont from "../../../components/reader/settingFooter/inputFont";
 
 export default function ReaderPage() {
   return (
@@ -838,19 +840,8 @@ export default function ReaderPage() {
                 </div>
                 <div className="buttons-for-change-font-size d-flex justify-content-center gap-3">
                   <BtnDecFont/>
-                  <input
-                    type="number"
-                    name="font-size"
-                    id="fontSize"
-                    className="form-control w-25 text-center"
-                    readOnly
-                  />
-                  <button className="btn border increase">
-                    <span>
-                      <i className="fa-regular fa-plus fa-xs"></i>
-                      <i className="fa-regular fa-a"></i>
-                    </span>
-                  </button>
+                  <InputFont/>
+                  <BtnIncFont/>
                 </div>
               </div>
             </div>

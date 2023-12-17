@@ -3,11 +3,11 @@ import React, { useEffect } from "react";
 export default function BtnDecFont() {
 
   useEffect(() => {
-    let defaultFontSize = parseInt(window.getComputedStyle(document.querySelector(".text-to-change-font-size")).fontSize);
     let boxFontSize = document.querySelector(".text-to-change-font-size");
     const decreaseBtn = document.querySelector(".decrease");
-
+    
     decreaseBtn.addEventListener("click", function () {
+      let defaultFontSize = parseInt(window.getComputedStyle(document.querySelector(".text-to-change-font-size")).fontSize);
       defaultFontSize--;
       if (defaultFontSize <= 16) {
         defaultFontSize = 16;
@@ -18,7 +18,6 @@ export default function BtnDecFont() {
       boxFontSize.style.fontSize = defaultFontSize + "px";
     });
     
-    document.getElementById("fontSize").value = defaultFontSize;
   },[])
 
   return (
