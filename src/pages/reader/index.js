@@ -7,6 +7,7 @@ import BtnDecFont from "../../../components/reader/settingFooter/btnDecFont";
 import BtnIncFont from "../../../components/reader/settingFooter/btnIncFont";
 import InputFont from "../../../components/reader/settingFooter/inputFont";
 import FontChange from "../../../components/reader/settingFooter/fontChange";
+import BtnOffcanvasSpeed from "../../../components/reader/speedFooter/btnOffcanvasSpeed";
 
 export default function ReaderPage() {
   return (
@@ -717,15 +718,7 @@ export default function ReaderPage() {
               <BtnOffcanvasSetting/>
             </div>
             <div className="speed">
-              <button
-                className="btn speed-btn"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasBottom-speed"
-                aria-controls="offcanvasBottom-speed"
-              >
-                1.00x
-              </button>
+              <BtnOffcanvasSpeed/>
             </div>
             <div className="play">
               <button type="button" className="btn border-0 p-0">
