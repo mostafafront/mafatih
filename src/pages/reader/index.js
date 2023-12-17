@@ -8,7 +8,10 @@ export default function ReaderPage() {
     <>
       {/* <!--  HEADER  --> */}
       <header className="header position-sticky top-0 z-in-nav">
-        <nav className="navbar bg-header radius-reader height-header w-100" dir="ltr">
+        <nav
+          className="navbar bg-header radius-reader height-header w-100"
+          dir="ltr"
+        >
           <div className="container-fluid d-flex justify-content-between px-4">
             <div className="leftHeader-reader d-flex align-items-center gap-4">
               <div className="backHome-iconReader">
@@ -18,13 +21,16 @@ export default function ReaderPage() {
               </div>
               <div className="savePrayer-iconReader">
                 <button className="border-0 bg-transparent p-0 p-md-2">
-                <i className="fa-regular fa-bookmark"></i>{" "}
-                {/* for show use the class : fa-solid */}
+                  <i className="fa-regular fa-bookmark"></i>{" "}
+                  {/* for show use the class : fa-solid */}
                 </button>
               </div>
             </div>
-            <div className="titlePrayer d-flex justify-content-center align-items-center" dir="rtl">
-                <h1 className="titlePrayer-text mb-0">زیارت عاشورا</h1>
+            <div
+              className="titlePrayer d-flex justify-content-center align-items-center"
+              dir="rtl"
+            >
+              <h1 className="titlePrayer-text mb-0">زیارت عاشورا</h1>
             </div>
             <div className="navbar-toggle d-flex justify-content-end">
               <BtnMenu />
@@ -553,35 +559,149 @@ export default function ReaderPage() {
       {/* <!-- OFFCANVAS NAV --> */}
 
       {/* <!-- PRAYER BOX --> */}
-      <section className="prayer-box pt-4">
-        <div className="container">
-          <rtLinkicle className="text-of-prayer pt-2 px-2 px-md-0 pb-3 mb-5 d-flex flex-column align-items-center gap-4">
-            <div className="head-prayer">
-              <img
-                src="/images/in-the-name-of-god.svg"
-                alt="in the name of god in head of text prayer"
-              />
+      <main className="prayer pt-3 pt-md-4">
+        <div className="prayer-box pb-3 mb-5">
+          <div className="besmellah-prayer d-flex justify-content-center align-items-center pb-4">
+            <img
+              src="/images/in-the-name-of-god.svg"
+              alt="in the name of god in head of text prayer"
+            />
+          </div>
+          <div className="text-prayer">
+            <div className="stickySubtitle-prayer d-flex align-items-center p-3 my-3">
+              <h3 className="mb-0">به دنبال نماز ظهر بگو :</h3>
             </div>
-            <p className="prayer">
-              <span className="text">
-                متن توضیحی متن توضیحی متن توضیحی متن توضیحی
-              </span>
-              السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ، السَّلامُ عَلَیْکَ یَا
-              ابْنَ رَسُولِ اللّٰهِ، السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ
-              وَابْنَ خِیرَتِه Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Amet, assumenda dolore earum est itaque laborum
-              magnam maxime mollitia nostrum odit officiis quaerat repudiandae
-              sapiente sint soluta vitae voluptatem? Accusamus, aspernatur at
-              culpa debitis delectus dicta eius eligendi facere fugiat, ipsum
-              iure libero qui quia repudiandae sequi similique vel veritatis
-              voluptatibus.
-              <span className="quran">
-                متن قرآن متن قرآن متن قرآن متن قرآن متن قرآن
-              </span>
-            </p>
-          </rtLinkicle>
+            <div className="textFaraz-prayer"> 
+              <div className="faraz d-flex flex-column">
+                <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                  <h6 className="mb-0">
+                    السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ،
+                  </h6>
+                </div>
+                <div className="translateText-Faraz py-1 px-3 px-md-4">
+                  <h6 className="mb-0">سلام بر تو ای ابا عبـداللّه </h6>
+                </div>
+              </div>
+              <div className="faraz d-flex flex-column">
+                <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                  <h6 className="mb-0">
+                  السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ، 
+                  </h6>
+                </div>
+                <div className="translateText-Faraz py-1 px-3 px-md-4">
+                  <h6 className="mb-0">سلام بـر تـو ای فرزند رسول خدا</h6>
+                </div>
+              </div>
+              <div className="faraz d-flex flex-column">
+                <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                  <h6 className="mb-0">
+                  السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِهِ،
+                  </h6>
+                </div>
+                <div className="translateText-Faraz py-1 px-3 px-md-4">
+                  <h6 className="mb-0">سلام بر تو ای برگزیده خدا و فرزند برگزیده اش،</h6>
+                </div>
+              </div>
+              <div className="faraz d-flex flex-column">
+                <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                  <h6 className="mb-0">
+                  السَّلامُ عَلَیْکَ یَا ابْنَ أَمِیرِ الْمُؤْمِنِینَ،
+                  </h6>
+                </div>
+                <div className="translateText-Faraz py-1 px-3 px-md-4">
+                  <h6 className="mb-0">سلام بر تو ای فرزند امیر مؤمنان،</h6>
+                </div>
+              </div>
+            </div>
+            <div className="stickySubtitle-prayer d-flex align-items-center p-3 my-3">
+              <h3 className="mb-0">به دنبال نماز عصر بگو :</h3>
+            </div>
+            <div className="textFaraz-prayer"> 
+              <div className="faraz d-flex flex-column">
+                <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                  <h6 className="mb-0">
+                    السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ،
+                  </h6>
+                </div>
+                <div className="translateText-Faraz py-1 px-3 px-md-4">
+                  <h6 className="mb-0">سلام بر تو ای ابا عبـداللّه </h6>
+                </div>
+              </div>
+              <div className="faraz d-flex flex-column">
+                <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                  <h6 className="mb-0">
+                  السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ، 
+                  </h6>
+                </div>
+                <div className="translateText-Faraz py-1 px-3 px-md-4">
+                  <h6 className="mb-0">سلام بـر تـو ای فرزند رسول خدا</h6>
+                </div>
+              </div>
+              <div className="faraz d-flex flex-column">
+                <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                  <h6 className="mb-0">
+                  السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِهِ،
+                  </h6>
+                </div>
+                <div className="translateText-Faraz py-1 px-3 px-md-4">
+                  <h6 className="mb-0">سلام بر تو ای برگزیده خدا و فرزند برگزیده اش،</h6>
+                </div>
+              </div>
+              <div className="faraz d-flex flex-column">
+                <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                  <h6 className="mb-0">
+                  السَّلامُ عَلَیْکَ یَا ابْنَ أَمِیرِ الْمُؤْمِنِینَ،
+                  </h6>
+                </div>
+                <div className="translateText-Faraz py-1 px-3 px-md-4">
+                  <h6 className="mb-0">سلام بر تو ای فرزند امیر مؤمنان،</h6>
+                </div>
+              </div>
+              <div className="faraz d-flex flex-column">
+                <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                  <h6 className="mb-0">
+                    السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ،
+                  </h6>
+                </div>
+                <div className="translateText-Faraz py-1 px-3 px-md-4">
+                  <h6 className="mb-0">سلام بر تو ای ابا عبـداللّه </h6>
+                </div>
+              </div>
+              <div className="faraz d-flex flex-column">
+                <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                  <h6 className="mb-0">
+                  السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ، 
+                  </h6>
+                </div>
+                <div className="translateText-Faraz py-1 px-3 px-md-4">
+                  <h6 className="mb-0">سلام بـر تـو ای فرزند رسول خدا</h6>
+                </div>
+              </div>
+              <div className="faraz d-flex flex-column">
+                <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                  <h6 className="mb-0">
+                  السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِهِ،
+                  </h6>
+                </div>
+                <div className="translateText-Faraz py-1 px-3 px-md-4">
+                  <h6 className="mb-0">سلام بر تو ای برگزیده خدا و فرزند برگزیده اش،</h6>
+                </div>
+              </div>
+              <div className="faraz d-flex flex-column">
+                <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                  <h6 className="mb-0">
+                  السَّلامُ عَلَیْکَ یَا ابْنَ أَمِیرِ الْمُؤْمِنِینَ،
+                  </h6>
+                </div>
+                <div className="translateText-Faraz py-1 px-3 px-md-4">
+                  <h6 className="mb-0">سلام بر تو ای فرزند امیر مؤمنان،</h6>
+                </div>
+              </div>
+            </div>
+           
+          </div>
         </div>
-      </section>
+      </main>
       {/* <!-- PRAYER BOX --> */}
 
       {/* <!-- FOOTER --> */}

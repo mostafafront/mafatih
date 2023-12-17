@@ -2,7 +2,7 @@
 @import "style.css";
 @import "kfg-font.css";
 
-/* header */
+/* HEADER */
 .radius-reader{
     border-radius: 0px 0px 24px 24px;
 }
@@ -12,7 +12,7 @@
 }
 
 .leftHeader-reader{
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 .backHome-iconReader > *{
@@ -31,7 +31,85 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-/* header */
+/* HEADER */
+
+/* PRAYER */
+.text-prayer {
+	color: var(--Tlight-veryDarkGreen);
+	text-align: justify;
+	font-family: KFGQPC Uthman Taha Naskh;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.stickySubtitle-prayer{
+	background-color: var(--Tlight-bg-stickySubtitle-reader);
+	color: var(--Tlight-fg-stickySubtitle-reader);
+	border-radius: 12px;
+	box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.15);
+}
+.stickySubtitle-prayer > * {
+	font-size: 1.125rem;
+	line-height: 1.3rem;
+}
+
+.arabicText-Faraz{
+	color: var(--Tlight-veryDarkGreen);
+}
+
+.arabicText-Faraz > *{
+	font-size: 2rem;
+	line-height: 3.2rem;
+}
+
+.translateText-Faraz{
+	display: flex;
+	align-items: center;
+	background-color: var(--Tlight-lightGreen);
+	color: var(--Tlight-darkGreen);
+}
+
+.translateText-Faraz > *{
+	font-size: 1rem;
+	line-height: 1.6rem;
+}
+
+/* PRAYER */
+
+
+
+.footer-buttons-select {
+	border-radius: 0.25rem;
+	border: 1px lightgray solid !important;
+	box-shadow: 0 0 1rem lightgray;
+}
+
+.tab-footer-setting {
+	color: var(--Tlight-black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 38px !important;
+	height: 38px;
+}
+
+.change-font-size {
+	height: 40vh;
+}
+
+.text-to-change-font-size {
+	width: 50%;
+	height: 20vh;
+	border-radius: 0.8rem;
+	font-size: 32px;
+}
+
+.nav-tab-setting-width {
+	width: 33.3%;
+	display: flex;
+	justify-content: center;
+}
 
 .content .prayer {
 	font-family: KFG;
@@ -72,48 +150,7 @@
 	white-space: nowrap;
 }
 
-/*PRAYER STYLES*/
-.prayer {
-	color: var(--Tlight-veryDarkGreen);
-	text-align: justify;
-	font-family: KFGQPC Uthman Taha Naskh;
-	font-size: 32px;
-	font-style: normal;
-	font-weight: 400;
-}
 
-
-.footer-buttons-select {
-	border-radius: 0.25rem;
-	border: 1px lightgray solid !important;
-	box-shadow: 0 0 1rem lightgray;
-}
-
-.tab-footer-setting {
-	color: var(--Tlight-black);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 38px !important;
-	height: 38px;
-}
-
-.change-font-size {
-	height: 40vh;
-}
-
-.text-to-change-font-size {
-	width: 50%;
-	height: 20vh;
-	border-radius: 0.8rem;
-	font-size: 32px;
-}
-
-.nav-tab-setting-width {
-	width: 33.3%;
-	display: flex;
-	justify-content: center;
-}
 
 /*#nav-tabContent {*/
 /*	height: 55vh;*/
