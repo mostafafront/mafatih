@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import BtnMenu from "../../../components/header/btnMenu";
 import FilterOffcanvas from "../../../components/header/filterOffcanvas";
-import BtnSetting from "../../../components/reader/btnSetting";
+import BtnSetting from "../../../components/reader/settingFooter/btnSetting";
 
 export default function ReaderPage() {
   return (
