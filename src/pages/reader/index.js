@@ -6,6 +6,7 @@ import BtnSetting from "../../../components/reader/settingFooter/btnSetting";
 import BtnDecFont from "../../../components/reader/settingFooter/btnDecFont";
 import BtnIncFont from "../../../components/reader/settingFooter/btnIncFont";
 import InputFont from "../../../components/reader/settingFooter/inputFont";
+import FontChange from "../../../components/reader/settingFooter/fontChange";
 
 export default function ReaderPage() {
   return (
@@ -709,7 +710,7 @@ export default function ReaderPage() {
       {/* <!-- PRAYER BOX --> */}
 
       {/* <!-- FOOTER --> */}
-      <footer className="footer bg-very-light-green position-fixed d-flex w-100 bottom-0 bg-very-light-green footer-z">
+      <footer className="footer-reader bg-very-light-green position-fixed d-flex w-100 bottom-0 bg-very-light-green footer-z">
         <div className="container">
           <div className="d-flex py-3 justify-content-between align-items-center">
             <div className="themes">
@@ -852,87 +853,7 @@ export default function ReaderPage() {
               aria-labelledby="nav-disabled-tab"
               tabIndex="0"
             >
-              <div
-                className="change-font-family d-flex flex-column gap-4 px-3 pt-3"
-                dir="ltr"
-              >
-                <div className="change-font-family-quran">
-                  <h3>Quran Font style :</h3>
-                  <div className="font-family-box-select d-flex flex-column gap-3">
-                    <div
-                      className="font-family-box shadow-light font-family-box-active d-flex rounded-3 justify-content-around align-items-center"
-                      id="font-family-translate-1"
-                      dir="rtl"
-                    >
-                      <span>نستعلیق :</span>
-                      <img
-                        src="/images/font-family-1.png"
-                        alt="font-family-1"
-                      />
-                    </div>
-                    <div
-                      className="font-family-box shadow-light d-flex rounded-3 justify-content-around align-items-center"
-                      id="font-family-translate-2"
-                      dir="rtl"
-                    >
-                      <span>نستعلیق :</span>
-                      <img
-                        src="/images/font-family-1.png"
-                        alt="font-family-1"
-                      />
-                    </div>
-                    <div
-                      className="font-family-box shadow-light d-flex rounded-3 justify-content-around align-items-center"
-                      id="font-family-translate-3"
-                      dir="rtl"
-                    >
-                      <span>نستعلیق :</span>
-                      <img
-                        src="/images/font-family-1.png"
-                        alt="font-family-1"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="change-font-family-translate">
-                  <h3>translation Font style :</h3>
-                  <div className="font-family-box-select d-flex flex-column gap-3">
-                    <div
-                      className="font-family-box shadow-light font-family-box-active d-flex rounded-3 justify-content-around align-items-center"
-                      id="font-family-1"
-                      dir="rtl"
-                    >
-                      <span>نستعلیق :</span>
-                      <img
-                        src="/images/font-family-1.png"
-                        alt="font-family-1"
-                      />
-                    </div>
-                    <div
-                      className="font-family-box shadow-light d-flex rounded-3 justify-content-around align-items-center"
-                      id="font-family-2"
-                      dir="rtl"
-                    >
-                      <span>نستعلیق :</span>
-                      <img
-                        src="/images/font-family-1.png"
-                        alt="font-family-1"
-                      />
-                    </div>
-                    <div
-                      className="font-family-box shadow-light d-flex rounded-3 justify-content-around align-items-center"
-                      id="font-family-3"
-                      dir="rtl"
-                    >
-                      <span>نستعلیق :</span>
-                      <img
-                        src="/images/font-family-1.png"
-                        alt="font-family-1"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <FontChange/>
             </div>
           </div>
         </div>

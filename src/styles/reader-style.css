@@ -2,6 +2,11 @@
 @import "style.css";
 @import "kfg-font.css";
 
+
+.cursor-pointer{
+	cursor: pointer;
+}
+
 /* HEADER */
 .radius-reader{
     border-radius: 0px 0px 24px 24px;
@@ -132,7 +137,11 @@
 	z-index: 1045;
 }
 
-.footer .themes > {
+.footer-reader{
+	box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.24);
+}
+
+.footer-reader .themes > {
 	color: var(--Tlight-veryDarkGreen);
 	text-align: justify;
 	font-family: noto, sans-serif;
@@ -141,7 +150,7 @@
 	font-weight: 700;
 }
 
-.footer .singer button {
+.footer-reader .singer button {
 	color: var(--Tlight-veryDarkGreen);
 	text-align: center;
 	font-family: noto, sans-serif;
@@ -167,12 +176,12 @@
 	margin: 0 0 2rem 0;
 }
 
-.font-family-box {
+.font-prayer, .font-translate {
 	padding: 0.4rem;
 	border-radius: 8px;
 }
 
-.font-family-box-active {
+.font-prayer-active, .font-translate-active {
 	border: 4px solid var(--Tlight-brown);
 }
 
