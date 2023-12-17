@@ -8,6 +8,7 @@ import BtnIncFont from "../../../components/reader/settingFooter/btnIncFont";
 import InputFont from "../../../components/reader/settingFooter/inputFont";
 import FontChange from "../../../components/reader/settingFooter/fontChange";
 import BtnOffcanvasSpeed from "../../../components/reader/speedFooter/btnOffcanvasSpeed";
+import BtnOffcanvasSinger from "../../../components/reader/singerFooter/btnOffcanvasSinger";
 
 export default function ReaderPage() {
   return (
@@ -726,15 +727,7 @@ export default function ReaderPage() {
               </button>
             </div>
             <div className="singer">
-              <button
-                className="btn singer-btn"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasBottom-singer"
-                aria-controls="offcanvasBottom-singer"
-              >
-                باسم الکربلائي
-              </button>
+              <BtnOffcanvasSinger/>
             </div>
             <div className="select-box d-flex justify-content-end">
               <button type="button" className="btn border-0">
