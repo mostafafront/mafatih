@@ -625,6 +625,9 @@ export default function ReaderPage() {
             <div className="stickySubtitle-prayer d-flex align-items-center p-3 my-3">
               <h3 className="mb-0">به دنبال نماز ظهر بگو :</h3>
             </div>
+            <div className="desciption-prayer px-3">
+              <p>از کتاب «مصباح» شیخ طوسی و غیر آن روایت شده: هرگاه نماز را سلام دادی دست‌ها را تا برابر گوش بالا بـبر و «سه مرتبه» تکبیر [اللّهُ أَکْبَرُ] گفته و سپس بگو:</p>
+            </div>
             <div className="textFaraz-prayer">
               <div className="faraz d-flex flex-column">
                 <div className="arabicText-Faraz py-2 px-3 px-md-4">
