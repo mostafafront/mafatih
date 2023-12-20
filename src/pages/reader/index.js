@@ -713,7 +713,7 @@ export default function ReaderPage() {
       {/* <!-- PRAYER BOX --> */}
 
       {/* <!-- FOOTER --> */}
-      <footer className="footer-reader bg-very-light-green position-fixed d-flex w-100 bottom-0 bg-very-light-green footer-z">
+      <footer className="footer footer-reader bg-very-light-green position-fixed d-flex w-100 bottom-0 bg-very-light-green footer-z">
         <div className="container">
           <div className="d-flex py-3 justify-content-between align-items-center">
             <div className="themes">
