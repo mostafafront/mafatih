@@ -1,4 +1,4 @@
-export default data = {
+const data = {
     "title": "تعقیبات مشترکه نمازها",
     "descriptions": "",
     "items": [
@@ -251,3 +251,4 @@ export default data = {
       }
     ]
   };
+  export default data;

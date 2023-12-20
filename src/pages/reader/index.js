@@ -10,7 +10,7 @@ import FontChange from "../../../components/reader/settingFooter/fontChange";
 import BtnOffcanvasSpeed from "../../../components/reader/speedFooter/btnOffcanvasSpeed";
 import BtnOffcanvasSinger from "../../../components/reader/singerFooter/btnOffcanvasSinger";
 import SingersChange from "../../../components/reader/singerFooter/singersChange";
-import 
+import data from "../api/data";
 //document.body.scrollTop + sticky.getBoundingClientRect().top
 //window.pageYOffset + sticky.getBoundingClientRect().top
 //yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
@@ -624,7 +624,7 @@ export default function ReaderPage() {
           <div className="text-prayer">
             {
               <div className="stickySubtitle-prayer d-flex align-items-center p-3 my-3">
-                <h3 className="mb-0">{}</h3>
+                <h3 className="mb-0">{data.title}</h3>
               </div>
             }
           </div>
