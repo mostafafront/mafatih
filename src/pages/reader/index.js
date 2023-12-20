@@ -622,7 +622,11 @@ export default function ReaderPage() {
             />
           </div>
           <div className="text-prayer">
-            
+            {
+              <div className="stickySubtitle-prayer d-flex align-items-center p-3 my-3">
+                <h3 className="mb-0"></h3>
+              </div>
+            }
           </div>
         </div>
       </main>
