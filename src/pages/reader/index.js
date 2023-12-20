@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import BtnMenu from "../../../components/header/btnMenu";
 import FilterOffcanvas from "../../../components/header/filterOffcanvas";
@@ -11,7 +11,53 @@ import BtnOffcanvasSpeed from "../../../components/reader/speedFooter/btnOffcanv
 import BtnOffcanvasSinger from "../../../components/reader/singerFooter/btnOffcanvasSinger";
 import SingersChange from "../../../components/reader/singerFooter/singersChange";
 
+//document.body.scrollTop + sticky.getBoundingClientRect().top
+//window.pageYOffset + sticky.getBoundingClientRect().top
+//yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+// sticky.getBoundingClientRect().top - header.getBoundingClientRect().height - 2         its the best way
+
 export default function ReaderPage() {
+  useEffect(() => {
+    const sticky = document.querySelectorAll(".stickySubtitle-prayer");
+    const header = document.querySelector(".header");
+    let heightHeader = header.getBoundingClientRect().height;
+
+    window.addEventListener("scroll", function () {
+      sticky.forEach(function (stickyItem) {
+        let elementTop = stickyItem.getBoundingClientRect().top;
+
+        if (!document.querySelector(".sticky-active")) {
+          if (elementTop - heightHeader - 2 < 1) {
+            console.log("resid");
+            stickyItem.classList.add("sticky-active");
+            stickyItem.style.position = "sticky";
+            stickyItem.style.top = heightHeader + 2 + "px";
+          }
+        } else {
+          let activeElem = document.querySelector(".sticky-active");
+          let activeElemHeight = activeElem.getBoundingClientRect().height;
+          let activeElemTop = activeElem.getBoundingClientRect().top;
+
+          if (elementTop - heightHeader - 2 - activeElemHeight < 1) {
+            console.log("resid 2");
+
+            // for(let i = 0; i > 10; i++) {
+
+            // }
+
+            activeElem.classList.remove("sticky-active");
+            activeElem.style.top = heightHeader + 2 + "px";
+            activeElem.style.position = "static";
+
+            stickyItem.classList.add("sticky-active");
+            stickyItem.style.position = "sticky";
+            stickyItem.style.top = heightHeader + 2 + "px";
+          }
+        }
+      });
+    });
+  }, []); //for useEffect
+
   return (
     <>
       {/* <!--  HEADER  --> */}
@@ -579,7 +625,7 @@ export default function ReaderPage() {
             <div className="stickySubtitle-prayer d-flex align-items-center p-3 my-3">
               <h3 className="mb-0">به دنبال نماز ظهر بگو :</h3>
             </div>
-            <div className="textFaraz-prayer"> 
+            <div className="textFaraz-prayer">
               <div className="faraz d-flex flex-column">
                 <div className="arabicText-Faraz py-2 px-3 px-md-4">
                   <h6 className="mb-0">
@@ -593,7 +639,7 @@ export default function ReaderPage() {
               <div className="faraz d-flex flex-column">
                 <div className="arabicText-Faraz py-2 px-3 px-md-4">
                   <h6 className="mb-0">
-                  السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ، 
+                    السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ،
                   </h6>
                 </div>
                 <div className="translateText-Faraz py-1 px-3 px-md-4">
@@ -603,17 +649,19 @@ export default function ReaderPage() {
               <div className="faraz d-flex flex-column">
                 <div className="arabicText-Faraz py-2 px-3 px-md-4">
                   <h6 className="mb-0">
-                  السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِهِ،
+                    السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِهِ،
                   </h6>
                 </div>
                 <div className="translateText-Faraz py-1 px-3 px-md-4">
-                  <h6 className="mb-0">سلام بر تو ای برگزیده خدا و فرزند برگزیده اش،</h6>
+                  <h6 className="mb-0">
+                    سلام بر تو ای برگزیده خدا و فرزند برگزیده اش،
+                  </h6>
                 </div>
               </div>
               <div className="faraz d-flex flex-column">
                 <div className="arabicText-Faraz py-2 px-3 px-md-4">
                   <h6 className="mb-0">
-                  السَّلامُ عَلَیْکَ یَا ابْنَ أَمِیرِ الْمُؤْمِنِینَ،
+                    السَّلامُ عَلَیْکَ یَا ابْنَ أَمِیرِ الْمُؤْمِنِینَ،
                   </h6>
                 </div>
                 <div className="translateText-Faraz py-1 px-3 px-md-4">
@@ -624,7 +672,7 @@ export default function ReaderPage() {
             <div className="stickySubtitle-prayer d-flex align-items-center p-3 my-3">
               <h3 className="mb-0">به دنبال نماز عصر بگو :</h3>
             </div>
-            <div className="textFaraz-prayer"> 
+            <div className="textFaraz-prayer">
               <div className="faraz d-flex flex-column">
                 <div className="arabicText-Faraz py-2 px-3 px-md-4">
                   <h6 className="mb-0">
@@ -638,7 +686,7 @@ export default function ReaderPage() {
               <div className="faraz d-flex flex-column">
                 <div className="arabicText-Faraz py-2 px-3 px-md-4">
                   <h6 className="mb-0">
-                  السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ، 
+                    السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ،
                   </h6>
                 </div>
                 <div className="translateText-Faraz py-1 px-3 px-md-4">
@@ -648,17 +696,19 @@ export default function ReaderPage() {
               <div className="faraz d-flex flex-column">
                 <div className="arabicText-Faraz py-2 px-3 px-md-4">
                   <h6 className="mb-0">
-                  السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِهِ،
+                    السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِهِ،
                   </h6>
                 </div>
                 <div className="translateText-Faraz py-1 px-3 px-md-4">
-                  <h6 className="mb-0">سلام بر تو ای برگزیده خدا و فرزند برگزیده اش،</h6>
+                  <h6 className="mb-0">
+                    سلام بر تو ای برگزیده خدا و فرزند برگزیده اش،
+                  </h6>
                 </div>
               </div>
               <div className="faraz d-flex flex-column">
                 <div className="arabicText-Faraz py-2 px-3 px-md-4">
                   <h6 className="mb-0">
-                  السَّلامُ عَلَیْکَ یَا ابْنَ أَمِیرِ الْمُؤْمِنِینَ،
+                    السَّلامُ عَلَیْکَ یَا ابْنَ أَمِیرِ الْمُؤْمِنِینَ،
                   </h6>
                 </div>
                 <div className="translateText-Faraz py-1 px-3 px-md-4">
@@ -678,7 +728,7 @@ export default function ReaderPage() {
               <div className="faraz d-flex flex-column">
                 <div className="arabicText-Faraz py-2 px-3 px-md-4">
                   <h6 className="mb-0">
-                  السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ، 
+                    السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ،
                   </h6>
                 </div>
                 <div className="translateText-Faraz py-1 px-3 px-md-4">
@@ -688,17 +738,19 @@ export default function ReaderPage() {
               <div className="faraz d-flex flex-column">
                 <div className="arabicText-Faraz py-2 px-3 px-md-4">
                   <h6 className="mb-0">
-                  السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِهِ،
+                    السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِهِ،
                   </h6>
                 </div>
                 <div className="translateText-Faraz py-1 px-3 px-md-4">
-                  <h6 className="mb-0">سلام بر تو ای برگزیده خدا و فرزند برگزیده اش،</h6>
+                  <h6 className="mb-0">
+                    سلام بر تو ای برگزیده خدا و فرزند برگزیده اش،
+                  </h6>
                 </div>
               </div>
               <div className="faraz d-flex flex-column">
                 <div className="arabicText-Faraz py-2 px-3 px-md-4">
                   <h6 className="mb-0">
-                  السَّلامُ عَلَیْکَ یَا ابْنَ أَمِیرِ الْمُؤْمِنِینَ،
+                    السَّلامُ عَلَیْکَ یَا ابْنَ أَمِیرِ الْمُؤْمِنِینَ،
                   </h6>
                 </div>
                 <div className="translateText-Faraz py-1 px-3 px-md-4">
@@ -706,7 +758,55 @@ export default function ReaderPage() {
                 </div>
               </div>
             </div>
-           
+            <div className="text-prayer">
+              <div className="stickySubtitle-prayer d-flex align-items-center p-3 my-3">
+                <h3 className="mb-0">به دنبال نماز ظهر بگو :</h3>
+              </div>
+              <div className="textFaraz-prayer">
+                <div className="faraz d-flex flex-column">
+                  <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                    <h6 className="mb-0">
+                      السَّلامُ عَلَیْکَ یَا أَبا عَبْدِاللّٰهِ،
+                    </h6>
+                  </div>
+                  <div className="translateText-Faraz py-1 px-3 px-md-4">
+                    <h6 className="mb-0">سلام بر تو ای ابا عبـداللّه </h6>
+                  </div>
+                </div>
+                <div className="faraz d-flex flex-column">
+                  <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                    <h6 className="mb-0">
+                      السَّلامُ عَلَیْکَ یَا ابْنَ رَسُولِ اللّٰهِ،
+                    </h6>
+                  </div>
+                  <div className="translateText-Faraz py-1 px-3 px-md-4">
+                    <h6 className="mb-0">سلام بـر تـو ای فرزند رسول خدا</h6>
+                  </div>
+                </div>
+                <div className="faraz d-flex flex-column">
+                  <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                    <h6 className="mb-0">
+                      السَّلامُ عَلَیْکَ یا خِیَرَهَ اللّٰهِ وَابْنَ خِیرَتِهِ،
+                    </h6>
+                  </div>
+                  <div className="translateText-Faraz py-1 px-3 px-md-4">
+                    <h6 className="mb-0">
+                      سلام بر تو ای برگزیده خدا و فرزند برگزیده اش،
+                    </h6>
+                  </div>
+                </div>
+                <div className="faraz d-flex flex-column">
+                  <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                    <h6 className="mb-0">
+                      السَّلامُ عَلَیْکَ یَا ابْنَ أَمِیرِ الْمُؤْمِنِینَ،
+                    </h6>
+                  </div>
+                  <div className="translateText-Faraz py-1 px-3 px-md-4">
+                    <h6 className="mb-0">سلام بر تو ای فرزند امیر مؤمنان،</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -717,10 +817,10 @@ export default function ReaderPage() {
         <div className="container">
           <div className="d-flex py-3 justify-content-between align-items-center">
             <div className="themes">
-              <BtnOffcanvasSetting/>
+              <BtnOffcanvasSetting />
             </div>
             <div className="speed">
-              <BtnOffcanvasSpeed/>
+              <BtnOffcanvasSpeed />
             </div>
             <div className="play">
               <button type="button" className="btn border-0 p-0">
@@ -728,7 +828,7 @@ export default function ReaderPage() {
               </button>
             </div>
             <div className="singer">
-              <BtnOffcanvasSinger/>
+              <BtnOffcanvasSinger />
             </div>
             <div className="select-box d-flex justify-content-end">
               <button type="button" className="btn border-0">
@@ -827,9 +927,9 @@ export default function ReaderPage() {
                   اللّٰهِ
                 </div>
                 <div className="buttons-for-change-font-size d-flex justify-content-center gap-3">
-                  <BtnDecFont/>
-                  <InputFont/>
-                  <BtnIncFont/>
+                  <BtnDecFont />
+                  <InputFont />
+                  <BtnIncFont />
                 </div>
               </div>
             </div>
@@ -840,7 +940,7 @@ export default function ReaderPage() {
               aria-labelledby="nav-disabled-tab"
               tabIndex="0"
             >
-              <FontChange/>
+              <FontChange />
             </div>
           </div>
         </div>
@@ -928,7 +1028,7 @@ export default function ReaderPage() {
             </div>
           </div>
           <div className="boorder-singer border w-100"></div>
-          <SingersChange/>
+          <SingersChange />
         </div>
       </div>
       {/* <!-- OFFCANVAS SINGER FOOTER --> */}
