@@ -84,7 +84,7 @@ export default function ReaderPage() {
               className="titlePrayer d-flex justify-content-center align-items-center"
               dir="rtl"
             >
-              <h1 className="titlePrayer-text mb-0">زیارت عاشورا</h1>
+              <h1 className="titlePrayer-text mb-0">{data.title}</h1>
             </div>
             <div className="navbar-toggle d-flex justify-content-end">
               <BtnMenu />
@@ -622,11 +622,49 @@ export default function ReaderPage() {
             />
           </div>
           <div className="text-prayer">
-            {
-              <div className="stickySubtitle-prayer d-flex align-items-center p-3 my-3">
-                <h3 className="mb-0">{data.title}</h3>
-              </div>
-            }
+            {data.items.map((item) => {
+              if (item.type == "title")
+                return (
+                  <div className="stickySubtitle-prayer d-flex align-items-center p-3 my-3">
+                    <h3 className="mb-0">{item.body}</h3>
+                  </div>
+                );
+
+              if (item.type == "descriptions")
+                return (
+                  <div className="desciption-prayer px-3">
+                    <p>{item.body}</p>
+                  </div>
+                );
+
+              if (item.type == "list")
+                return (
+                  <div className="desciption-prayer px-3 d-flex flex-wrap">
+                    {item.body.map((itemLink) => {
+                      if (itemLink.type == "descriptions") {
+                        return <p>{itemLink.body}</p>;
+                      }
+                      if (itemLink.type == "link") {
+                        return (
+                          <Link href={itemLink.link}>{itemLink.body}</Link>
+                        );
+                      }
+                    })}
+                  </div>
+                );
+
+              if (item.type == "item")
+                return (
+                  <div className="faraz d-flex flex-column">
+                    <div className="arabicText-Faraz py-2 px-3 px-md-4">
+                      <h6 className="mb-0">{item.body}</h6>
+                    </div>
+                    <div className="translateText-Faraz py-1 px-3 px-md-4">
+                      <h6 className="mb-0">{item.translate}</h6>
+                    </div>
+                  </div>
+                );
+            })}
           </div>
         </div>
       </main>
