@@ -456,3 +456,13 @@ ul.nav li.nav-item .active {
 	box-shadow: 0 0 10px var(--Tlight-very-light-black);
 }
 /*SHADOWS*/
+
+
+
+/* SWIPER SLIDER */
+@media screen and (min-width: 250px) and (max-width: 320px) {
+	.swiperSlider-index{
+		padding: 0rem 3rem !important;
+	}
+}
+/* SWIPER SLIDER */
