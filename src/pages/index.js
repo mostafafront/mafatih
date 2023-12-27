@@ -6,6 +6,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css'; //میتونه نباشه
 import FilterInput from "../../components/index/filterInput";
 import Link from "next/link";
+import SwiperSlider from "../../components/index/swiperSlider";
 
 
 export default function Home() {
@@ -279,7 +280,8 @@ export default function Home() {
 				<div className="head-of-owl pt-2 container pb-2">
 					<h3 className="text-color-prayers">ادعیة و زیاراة المعروفة</h3>
 				</div>
-				<div className="owl-carousel">
+				<SwiperSlider/>
+				{/* <div className="owl-carousel">
 					<div className="item px-3">
 						<Link href={"./reader"}><img src="/images/owl-prayer.svg" alt="prayer"/></Link>
 					</div>
@@ -298,7 +300,7 @@ export default function Home() {
 					<div className="item px-3">
 						<Link href={"./reader"}><img src="/images/owl-prayer.svg" alt="prayer"/></Link>
 					</div>
-				</div>
+				</div> */}
 			</section>
 			{/* <!--         owl section         --> */}
 		</main>
