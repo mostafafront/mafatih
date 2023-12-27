@@ -59,6 +59,9 @@
 	.date-font {
 		font-size: 14px !important;
 	}
+	.other-date-font {
+		font-size: 11px !important;
+	}
 }
 
 .other-date-font {
@@ -66,11 +69,6 @@
 	color: var(--Tlight-middle-black);
 }
 
-@media screen and (max-width: 576px) {
-	.other-date-font {
-		font-size: 11px !important;
-	}
-}
 
 .btn-today {
 	border: none !important;
@@ -143,3 +141,10 @@
 	padding-left: 0;
 }
 /*MODALS STYLE*/
+
+
+@media screen and (min-width: 992px) {
+	.border-top-lg-0{
+		border-top: 0px !important;
+	}
+}
