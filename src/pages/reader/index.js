@@ -67,8 +67,8 @@ export default function ReaderPage() {
           dir="ltr"
         >
           <div className="container-fluid d-flex justify-content-between px-4">
-            <div className="leftHeader-reader d-flex align-items-center gap-4">
-              <div className="backHome-iconReader">
+            <div className="leftHeader-reader d-flex align-items-center">
+              <div className="backHome-iconReader ms-3 ms-sm-4">
                 <Link href={"./"}>
                   <i className="fa-solid fa-chevron-left"></i>
                 </Link>
@@ -86,7 +86,7 @@ export default function ReaderPage() {
             >
               <h1 className="titlePrayer-text mb-0">{data.title}</h1>
             </div>
-            <div className="navbar-toggle d-flex justify-content-end">
+            <div className="navbar-toggle navbar-toggle-reader d-flex justify-content-end">
               <BtnMenu />
             </div>
           </div>

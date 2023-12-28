@@ -18,6 +18,11 @@
 
 .leftHeader-reader{
 	font-size: 1.25rem;
+	width: 15%;
+}
+
+.navbar-toggle-reader{
+	width: 15%;
 }
 
 .backHome-iconReader > *{
@@ -36,6 +41,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
 /* HEADER */
 
 /* PRAYER */
