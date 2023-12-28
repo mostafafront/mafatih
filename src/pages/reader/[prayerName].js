@@ -10,13 +10,24 @@ import FontChange from "../../../components/reader/settingFooter/fontChange";
 import BtnOffcanvasSpeed from "../../../components/reader/speedFooter/btnOffcanvasSpeed";
 import BtnOffcanvasSinger from "../../../components/reader/singerFooter/btnOffcanvasSinger";
 import SingersChange from "../../../components/reader/singerFooter/singersChange";
-import data from "../api/data";
+
+
 //document.body.scrollTop + sticky.getBoundingClientRect().top
 //window.pageYOffset + sticky.getBoundingClientRect().top
 //yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
 // sticky.getBoundingClientRect().top - header.getBoundingClientRect().height - 2         its the best way
 
-export default function ReaderPage() {
+
+export async function getServerSideProps(ctx) {
+
+  const res = await fetch(`https://rafed.net/mafatih/${ctx.params.prayerName}`);
+  const data = await res.json();
+
+  return { props: {data} };
+}
+
+
+export default function ReaderPage({data}) {
   useEffect(() => {
     const sticky = document.querySelectorAll(".stickySubtitle-prayer");
     const header = document.querySelector(".header");
@@ -57,7 +68,7 @@ export default function ReaderPage() {
       });
     });
   }, []); //for useEffect
-
+ 
   return (
     <>
       {/* <!--  HEADER  --> */}
