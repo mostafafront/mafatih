@@ -33,7 +33,7 @@ export default function SwiperSlider() {
       }}
     >
       <SwiperSlide className="swiperSlider-index px-3 px-lg-4">
-        <Link href={"./reader"}>
+        <Link href={"./reader/get-doa"}>
           <img
             src="/images/owl-prayer.svg"
             alt="prayer"
@@ -42,7 +42,7 @@ export default function SwiperSlider() {
         </Link>
       </SwiperSlide>
       <SwiperSlide className="swiperSlider-index px-3 px-lg-4">
-        <Link href={"./reader"}>
+        <Link href={"./reader/get-doa"}>
           <img
             src="/images/owl-prayer.svg"
             alt="prayer"
@@ -51,7 +51,7 @@ export default function SwiperSlider() {
         </Link>
       </SwiperSlide>
       <SwiperSlide className="swiperSlider-index px-3 px-lg-4">
-        <Link href={"./reader"}>
+        <Link href={"./reader/ziarat-ashoora-fa"}>
           <img
             src="/images/owl-prayer.svg"
             alt="prayer"
@@ -60,7 +60,7 @@ export default function SwiperSlider() {
         </Link>
       </SwiperSlide>
       <SwiperSlide className="swiperSlider-index px-3 px-lg-4">
-        <Link href={"./reader"}>
+        <Link href={"./reader/ziarat-ashoora-fa"}>
           <img
             src="/images/owl-prayer.svg"
             alt="prayer"
@@ -69,7 +69,7 @@ export default function SwiperSlider() {
         </Link>
       </SwiperSlide>
       <SwiperSlide className="swiperSlider-index px-3 px-lg-4">
-        <Link href={"./reader"}>
+        <Link href={"./reader/ziarat-ashoora-fa"}>
           <img
             src="/images/owl-prayer.svg"
             alt="prayer"
@@ -78,7 +78,7 @@ export default function SwiperSlider() {
         </Link>
       </SwiperSlide>
       <SwiperSlide className="swiperSlider-index px-3 px-lg-4">
-        <Link href={"./reader"}>
+        <Link href={"./reader/ziarat-ashoora-fa"}>
           <img
             src="/images/owl-prayer.svg"
             alt="prayer"
@@ -87,7 +87,7 @@ export default function SwiperSlider() {
         </Link>
       </SwiperSlide>
       <SwiperSlide className="swiperSlider-index px-3 px-lg-4">
-        <Link href={"./reader"}>
+        <Link href={"./reader/get-doa"}>
           <img
             src="/images/owl-prayer.svg"
             alt="prayer"
@@ -96,7 +96,7 @@ export default function SwiperSlider() {
         </Link>
       </SwiperSlide>
       <SwiperSlide className="swiperSlider-index px-3 px-lg-4">
-        <Link href={"./reader"}>
+        <Link href={"./reader/get-doa"}>
           <img
             src="/images/owl-prayer.svg"
             alt="prayer"
