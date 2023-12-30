@@ -29,9 +29,12 @@ export async function getServerSideProps(ctx) {
 
 export default function ReaderPage({data}) {
   useEffect(() => {
+
+    // sticky subtitle
     const sticky = document.querySelectorAll(".stickySubtitle-prayer");
     const header = document.querySelector(".header");
     let heightHeader = header.getBoundingClientRect().height;
+
 
     window.addEventListener("scroll", function () {
       sticky.forEach(function (stickyItem) {
@@ -67,6 +70,38 @@ export default function ReaderPage({data}) {
         }
       });
     });
+    // sticky subtitle
+
+
+    // highlight Faraz
+    
+    const ArabicTextFaraz = document.querySelectorAll('.arabicText-Faraz')
+
+    ArabicTextFaraz.forEach((arabicText) => {
+      
+      arabicText.addEventListener('click', function (event) {
+        ArabicTextFaraz.forEach((activeFaraz) => {
+          activeFaraz.classList.remove('highlight-reader')
+        })
+        event.target.closest('.arabicText-Faraz').classList.add('highlight-reader')
+      })
+    })
+    
+    // highlight Faraz
+
+
+    // play song //
+    
+    const farazActive = document.querySelector('.highlight-reader')
+    const playBtn = document.querySelector('playBtn')
+
+    // playBtn.addEventListener('click', function () {
+    //   console.log("first")
+    // }))
+    
+    // play song //
+
+
   }, []); //for useEffect
  
   return (
@@ -667,8 +702,8 @@ export default function ReaderPage({data}) {
               if (item.type == "item")
                 return (
                   <div className="faraz d-flex flex-column">
-                    <div className="arabicText-Faraz py-2 px-3 px-md-4">
-                      <h6 className="mb-0">{item.body}</h6>
+                    <div className="arabicText-Faraz cursor-pointer">
+                      <h6 className="mb-0 py-2 px-3 px-md-4">{item.body}</h6>
                     </div>
                     <div className="translateText-Faraz py-1 px-3 px-md-4">
                       <h6 className="mb-0">{item.translate}</h6>
@@ -691,7 +726,7 @@ export default function ReaderPage({data}) {
             <div className="speed">
               <BtnOffcanvasSpeed />
             </div>
-            <div className="play">
+            <div className="playBtn">
               <button type="button" className="btn border-0 p-0">
                 <img src="/images/play-icon.svg" alt="play icon" />
               </button>

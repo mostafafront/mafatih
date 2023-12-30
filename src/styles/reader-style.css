@@ -95,6 +95,13 @@
 }
 /* descirption */
 
+/* Highlight */
+.highlight-reader{
+	background-color: var(--Tlight-green) !important;
+	transition: all .3s ease-out;
+}
+/* Highlight */
+
 /* PRAYER */
 
 
