@@ -2,8 +2,9 @@ import React from 'react'
 import Link from "next/link";
 import BtnMenu from '../../header/btnMenu';
 import FilterOffcanvas from '../../header/filterOffcanvas';
+import { getServerSideProps } from '@/pages/reader/[prayerName]';
+export default function HeaderReader({data}) {
 
-export default function HeaderReader() {
   return (
     <>
           {/* <!--  HEADER  --> */}
@@ -30,7 +31,7 @@ export default function HeaderReader() {
               className="titlePrayer d-flex justify-content-center align-items-center"
               dir="rtl"
             >
-              <h1 className="titlePrayer-text mb-0">{data.title}</h1>
+              <h1 className="titlePrayer-text mb-0">{}</h1>
             </div>
             <div className="navbar-toggle navbar-toggle-reader d-flex justify-content-end">
               <BtnMenu />
